@@ -103,6 +103,10 @@ section {
     margin-bottom:30px;
 }
 
+.section-head{
+    margin-top: 50px;
+}
+
 #footer-links > a {
     color: #fff;
 }
@@ -197,13 +201,16 @@ section {
 }
 
 .navbar-brand img{
-    max-width: 50%;
-    margin: 3% 0% 3% 5%;
+    max-width: 110%;
+    margin: 6% 0% 3% 5%;
 }
 
+@media (max-width: 320px) {
+    
+}
 
 .btn-py16 {
-        padding:10px 25px;
+    padding:10px 25px;
     background: #da3127;
     font-weight: 400;
     font-size:16px;
@@ -338,7 +345,7 @@ section {
 }
 
 .navbar-toggle {
-    background-color: #333;
+    background-color: #c8c8c8;
 }
 
 
@@ -404,7 +411,7 @@ button {
 
 @media (max-width: 768px) {
 .section{
-        margin-top:80px !important;
+        margin-top:30px !important;
     }
 }
 
