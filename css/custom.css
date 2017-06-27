@@ -92,13 +92,9 @@ nav:hover .forAnimate{
     opacity: 1;
 }
 
-section {
-    padding-left: 15px;
-}
-
 .section{
     min-height:90vh;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 .section-head{
@@ -378,7 +374,7 @@ button {
 
 @media (max-width: 768px) {
 .section{
-        margin-top:30px !important;
+        margin-top:10px !important;
     }
 }
 
