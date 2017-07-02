@@ -3,11 +3,6 @@
 body, html {
     height: 100%;
     font-family: 'Ubuntu', sans-serif;
-    background: url('../images/bgimage.jpg') fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
     line-height:25px;
     font-size: 16px;
     color:#333;
@@ -109,67 +104,8 @@ nav:hover .forAnimate{
     color: #333;
 }
 
-.overbg .footerdown {
-    bottom:0px;
-    position: absolute;
-    z-index:1000;
-    padding:5px 25px 0px 25px;
-    color:#eee;
-    width: 80%;
-}
-
-.btn {
-    border-radius: 0;
-}
-
-.info-block {
-    margin-bottom:25px;
-    border:1px solid #c9302c;
-}
-
-.info-block .square-box {
-    width:100px;
-    min-height:110px;
-    margin-right:22px;
-    text-align:center!important;
-    padding:20px 0
-}
-
-.info-block.block-info {
-    border-color:#c9302c;
-}
-
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height:100% !important;
-}
-
-#others {
-    margin-bottom: 100px;
-    margin-top: 0px;
-}
-
-.py16navbar li a {
-    font-size:16px;
-    padding-top:12px;
-    padding-bottom:10px;
-    color:#333 !important;
-    font-weight: 400;
-    transition:0.4s;
-    text-align: center;
-}
-
-.py16navbar li.active > a:before {
-   content: url('../images/menubg1.png');
-   margin-left:-30px;
-   vertical-align: middle;
-   display: inline-block;
-}
-
-.py16navbar li.active > a:after {
-   content: url('../images/menubg1.png');
-   margin-right:-30px;
-   vertical-align: middle;
-   display: inline-block;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -198,117 +134,6 @@ nav:hover .forAnimate{
     margin: 6% 0% 3% 5%;
 }
 
-.btn-py16 {
-    padding:10px 25px;
-    background: #da3127;
-    font-weight: 400;
-    font-size:16px;
-    text-transform: uppercase;
-}
-
-.teams .pybox,.sponsors .pybox,.teams .pybox {
-    min-height: 255px;
-    padding:25px;
-    margin:10px;
-}
-
-.pybox {
-    -webkit-box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    -moz-box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    padding:25px;
-    margin-bottom: 10px;
-    background: #fff url('../images/boxbg.png') right bottom no-repeat;
-}
-.sponsors .pybox {
-    background: #fff;
-    padding: 10px;
-}
-.sponsors .pybox a {
-    display: inline-block;
-}
-
-#sponsors--silver .pybox {
-    min-height: 150px;
-}
-
-#sponsors--associate .pybox {
-    min-height: 130px;
-}
-.sponsors-description {
-    text-align: left;
-}
-
-.sponsor-logo {
-    max-width: 250px;
-    padding-bottom: 2em;
-}
-
-.modal-body {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.speakers {
-    /*margin-top:-80px;*/
-    height: 130vh;
-}
-
-.speakers .social {
-    color:#000;
-}
-
-.speakers h4 {
-    color:#000;
-}
-
-.schedule .nav-tabs>li.active>a,
-.schedule .nav-tabs>li.active>a:focus,
-.schedule .nav-tabs>li.active>a:hover {
-    background:#da3127;
-    border:none;
-    color:#fff;
-}
-
-.schedule .nav-tabs>li>a,.schedule .nav-tabs>li>a:focus,.schedule .nav-tabs>li>a:hover {
-    color:#111;
-    transition:0.4s;
-}
-
-.schedule .nav-tabs>li>a:hover {
-    background:#f2f2f2;
-    border-radius:0px;
-}
-
-.schedule .nav-tabs>li>a {
-    background:#fff;
-    -webkit-box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    -moz-box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    box-shadow: 0px 1px 21px 0px rgba(200,200,200,1);
-    border-radius:0px;
-}
-
-.schedule .nav-tabs {
-    border:none;
-}
-
-.schedule .nav>li>a {
-    padding:1px;
-}
-
-.schedule .tab-content {
-    padding-top:20px;
-}
-
-.pyred {
-    color:#da3127;
-    font-weight:400;
-}
-
-.pytablefont {
-    font-size:13px;
-}
-
 .navbar-toggle {
     background-color: #c8c8c8;
 }
@@ -322,35 +147,6 @@ button {
     color: #fff;
     font-size: 17px;
     text-transform: uppercase;
-}
-
-.pymatbtn {
-    padding: 0.6em 1.2em;
-    margin-left: 10px;
-    margin-right: 10px;
-    position: relative;
-    min-width: 200px;
-    display: inline-block;
-    background:#00aad4;
-    -webkit-transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.pymatbtn:hover {
-    outline: none;
-    background: #007a99;
-}
-.pymatbtn:focus {
-    outline: none;
-}
-
-.speakers h2,.schedule h2,.venue h2,.sponsors h2,.blog h2,.sponsorpship h2 {
-    font-weight: 700;
-    font-size: 30px !important;
-    vertical-align: middle;
-    margin:25px 0 45px 0;
-    z-index:2;
-    position: relative;
 }
 
 .sponsors h3 {
@@ -371,7 +167,16 @@ button {
 #sponsorship-download > a:hover {
    background: rgba(64, 64, 64, 0.82);
 }
-
+.footer .contact {
+    text-align: center;
+}
+.footer .contact--link {
+    padding: 5px 1em;
+    border-left: 1px dotted #f8337d;
+}
+.footer .contact--link:first-child {
+    border-left: none;
+}
 @media (max-width: 768px) {
 .section{
         margin-top:10px !important;
@@ -457,9 +262,6 @@ button {
         opacity: 0;
     }
 
-}
-.speaker.pybox {
-    background-size: 55%;
 }
 
 @media (max-width: 768px) {
