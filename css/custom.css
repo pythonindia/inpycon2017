@@ -96,6 +96,10 @@ nav:hover .forAnimate{
     margin-top: 50px;
 }
 
+.link{
+    color: #00aad4;
+}
+
 #footer-links > a {
     color: #fff;
 }
@@ -149,6 +153,27 @@ button {
     text-transform: uppercase;
 }
 
+.pymatbtn {
+    padding: 0.6em 1.2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    min-width: 200px;
+    display: inline-block;
+    background:#00aad4;
+    -webkit-transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 200ms background cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.pymatbtn:hover {
+    outline: none;
+    background: #007a99;
+}
+.pymatbtn:focus {
+    outline: none;
+}
+
 .sponsors h3 {
     margin:40px 0 15px 0;
 }
@@ -172,7 +197,7 @@ button {
 }
 .footer .contact--link {
     padding: 5px 1em;
-    border-left: 1px dotted #f8337d;
+    border-left: 1px dotted #00aad4;
 }
 .footer .contact--link:first-child {
     border-left: none;
@@ -269,10 +294,10 @@ button {
         background-size: 10%;
     }
     .footer a{
-        color: #da3127;
+        color: #000000;
     }
-    #footer-links > a {
-        color: #da3127;
+    .foooter a:hover {
+        color: #00aad4;
     }
 
 }
@@ -286,7 +311,7 @@ button {
         display: block;
         position: absolute;
         height: 50pX;
-        background: #da3127;
+        background: #00aad4;
         width: 100%;
         bottom: 0;
     }
