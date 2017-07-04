@@ -353,3 +353,6 @@ button {
         opacity: 1;
     }
 }
+.col-md-8 {
+   margin-top: 60px;
+}
