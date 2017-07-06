@@ -1,128 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PyCon India 2017</title>
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="fonts/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+        <title>
+            PyCon India 2017
+        </title><!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="fonts/font-awesome.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet"><!-- Custom styles for this template -->
+        <link href="css/custom.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
 
-  </head>
-  <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"  style="margin-top: 5%" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" style="max-width: 40%" href="#"><img alt="Brand" src="img/logo_inpycon17_sm.png"></a>
-            </div>
+                    <div class="navbar-header">
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" style="margin-top: 5%" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#" style="max-width: 40%"><img alt="Brand" src="img/logo_inpycon17_sm.png"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;">
-                <li><a href="#">Home</a></li>
-                <li><a href="#sponsorship">Sponsorship</a></li>
-                <li><a href="#faq">FAQ</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
 
-        <section id="home" class="home section section-head">
-            <div class="row text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <center>
-                        <img src="img/logo_pycon17.png" class="img-responsive" style="max-width:60%;"/>
-                    </center>
+                            <li>
+                                <a href="#sponsorship">Sponsorship</a>
+                            </li>
+
+                            <li>
+                                <a href="#volunteer">Volunteer</a>
+                            </li>
+
+                            <li>
+                                <a href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <br/>
-                    <h4 class="text-center">
-                        PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.
-                    </h4>
-                    <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
-                        <div class="col-md-2" style="padding-top:15px">
-                            <img src="img/workshop.svg" class=""/>
-                        </div>
-                        <div class="col-md-8">
-                            <h2 class="name"> Workshops + DevSprints </h2>
-                            <h4 class="date">
-                                November 2-3, 2017 [Thurs-Fri]
-                            </h4>
-                        </div>
+                <!-- /.container-fluid -->
+            </nav>
+
+            <section class="home section section-head" id="home">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <center>
+                            <img class="img-responsive" src="img/logo_pycon17.png" style="max-width:60%;">
+                        </center>
                     </div>
-                    <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
-                        <div class="col-md-2" style="padding-top:15px">
-                            <img src="img/conf.svg" class=""/>
+
+                    <div class="col-md-10 col-md-offset-1">
+                        <br>
+
+                        <h4 class="text-center">
+                            PyCon India, the premier conference in India on using and developing the Python programming language is conducted annually by the Python developer community. It attracts the best Python programmers from across the country and abroad.
+                        </h4>
+
+                        <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                            <div class="col-md-2" style="padding-top:15px">
+                                <img class="" src="img/workshop.svg">
+                            </div>
+
+                            <div class="col-md-8">
+                                <h2 class="name">
+                                    Workshops + DevSprints
+                                </h2>
+
+                                <h4 class="date">
+                                    November 2-3, 2017 [Thurs-Fri]
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <h2 class="name"> Conference </h2>
-                            <h4 class="date">
-                                November 4-5, 2017 [Sat-Sun]
-                            </h4>
+
+                        <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                            <div class="col-md-2" style="padding-top:15px">
+                                <img class="" src="img/conf.svg">
+                            </div>
+
+                            <div class="col-md-8">
+                                <h2 class="name">
+                                    Conference
+                                </h2>
+
+                                <h4 class="date">
+                                    November 4-5, 2017 [Sat-Sun]
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div style="margin-top:30px;">
-                        <a target="_blank" href="https://in.pycon.org/cfp/2017/proposals/">
-                            <button id="js-ripple-btn" class="pymatbtn" style="margin-top:10px;">
-                                <i class="fa fa-edit"></i> Call for Proposal (CFP)
-                            </button>
-                        </a>
+
+                        <div class="clearfix">
+                        </div>
+
+                        <div style="margin-top:30px;">
+                            <a href="https://in.pycon.org/cfp/2017/proposals/" target="_blank"><button class="pymatbtn" id="js-ripple-btn" style="margin-top:10px;"><i class="fa fa-edit"></i> Call for Proposal (CFP)</button></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--//home-->
+            </section>
+            <!--//home-->
+            <!-- ******others****** -->
 
+            <section class="others section" id="sponsorship">
+                <div class="row">
+                    <div class="col-md-12 sponsorship">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="title text-center">
+                                <img src="img/ticket.svg"><br>
+                                SPONSORSHIP
+                            </h2>
+                        </div>
+
+                        <div class="col-md-10 col-md-offset-1">
+                            <br>
+
+                            <p>
+                                PyCon India is the largest annual conference for the community using and developing the Python programming language in India. It attracts the best Python programmers across the country and abroad. PyCon India is a community conference, organized by volunteers. Formally it is run by the Python Software Society of India, which is a non-profit society under Indian law.
+                            </p>
+                            <br>
+
+                            <h3>
+                                Sponsoring
+                            </h3>
+
+                            <p>
+                                Your sponsorship keeps PyCon India affordable to the widest possible audience.
+                            </p>
+
+                            <p>
+                                In order to ensure a successful conference, the community needs to address a wide range of logistical and organizational challenges. PyCon India attendees sometimes require assistance with expenses especially student attendees, and sponsorship enables us to support those who would otherwise be unable to attend.
+                            </p>
+
+                            <p>
+                                The attendees of PyCon India will include professional developers from large enterprises and smaller firms as well as people from academia. Delegates come to present their latest developments. With Python already becoming a major enterprise programming language and platform, sponsoring PyCon India 2017 is an excellent opportunity to demonstrate industry leadership in this part of the world. The attendance of PyCon India 2017 is expected to be between 1200 and 1350 delegates.
+                            </p>
+                            <br>
+
+                            <h5 id="sponsorship-download">
+                                <a href="https://goo.gl/dXYqx1" target="_blank">Download Sponsorship Prospectus</a>
+                            </h5>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--//others-->
+
+            <section class="others section" id="volunteer">
+                <div class="row">
+                    <div class="col-md-12 volunteers">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2 class="title text-center">
+                                <img src="img/volunteer.svg"><br>
+                                VOLUNTEER
+                            </h2>
+                        </div>
+
+                        <div class="col-md-10 col-md-offset-1">
+                            <p>
+                                <a href="http://in.pycon.org/">PyCon India</a> is a community event. Here each and every task is done by a volunteer. And here is the opportunity for You to be a part of the community.
+                            </p>
+
+                            <p>
+                                But before you register to volunteer, there are few things you should be aware of -
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <p>
+                                        Volunteering takes time and effort, sometimes a lot of it. For online activities like handling social networks or handling registrations etc take a lot of time. And sometimes rapid decisions have to be made. So if you're volunteering, make sure you have the time. If you're unavailable at certain time period of the day, let us know beforehand.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        If you're volunteering for offline activities e.g. on spot registration or settings up stages or handling video recording, anything that has to be done on the venue during the event, there is a good chance that you won't be able to attend the sessions you just registered for. If someone needs you, you have to be there.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        Volunteering is not a free way into the event. At PyCon India, everybody buys tickets. Even the event organizers buy tickets. We volunteer because we love Python and PyCon, and want the event to be awesome.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        Volunteers are the most important part of the event. Without the volunteers, the event cannot happen. So even if you are attending PyCon for the first time, we encourage you to volunteer with whatever you can. If you don't want to miss any sessions, then volunteer for smaller tasks.
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <p>
+                                If you're still interested in volunteering, subscribe to <a href="https://mail.python.org/mailman/listinfo/inpycon">the mailing list</a>. <strong>Please don't subscribe to the daily digest</strong>. Digests are always behind the time and meant for those who just wants to stay updated and not participate in conversations. If you're already subscribed to the mailing list, <a href="https://mail.python.org/mailman/listinfo/inpycon">go ahead, login</a> and change your subscription type. Also, <strong>please don't reply to a digest</strong>.
+                            </p>
+
+                            <p>
+                                Once your name is on the form, keep an eye on the mailing list. Threads will be created on specific tasks asking for volunteers. If you think you can do the task and have enough time for it, raise your hand. That's it.
+                                You can join the telegram group and help out in the tasks their.
+                            </p>
+                            <br>
+                            
+                            <h5 id="sponsorship-download">
+                                <a href="https://t.me/joinchat/AAAAAEOZw7hYhueOARzGVA" target="_blank">Telegram Group</a>
+                            </h5>
+                            <br>
+
+                            <p>
+                                Also, if you have any question, we'd really appreciate if you go through the <a href="https://mail.python.org/pipermail/inpycon/">mailing list archives</a> first, and see if it's already answered. If not, you can talk to us at the IRC channel <a href="http://webchat.freenode.net/?channels=%23pyconindia">#pyconindia</a> on <a href="http://freenode.net/">freenode.net</a> or send a mail to the mailing list.
+                            </p>
+
+                            <p>
+                                Hope to see you at the event. Happy volunteering. :)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <!-- ******others****** -->
-        <section id="sponsorship" class="others section">
-            <div class="row">
+
+        <section class="others section" id="faq">
+            <div class="row text-center">
                 <div class="col-md-12 sponsorship">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="title text-center">
-                        <img src="img/ticket.svg" /><br/> SPONSORSHIP
-                </h2>
+                            <img src="img/faq.svg"><br>
+                            FAQ
+                        </h2>
                     </div>
-                    <div class="col-md-10 col-md-offset-1">
-                        <br/>
+
+                    <div class="col-md-10 col-md-offset-1 text-justify">
+                        <br>
+                        <!--  <br/>
+                        <h2 class="text-center">FAQ: Frequently Asked Questions</h2>
+                        <br/> -->
+
                         <p>
-                            PyCon India is the largest annual conference for the community using and developing the Python programming language in India. It attracts the best Python programmers across the country and abroad. PyCon India is a community conference, organized by volunteers. Formally it is run by the Python Software Society of India, which is a non-profit society under Indian law.
+                            <span><b>Q. I want to present a talk/workshop at the conference. What should I do?</b><br></span> <span>A. You can submit the proposal for your talk/workshop <a class="link" href='http://in.pycon.org/cfp/2017/proposals/' target="blank">here.</a></span>
                         </p>
-                        <br/>
-                        <h3>Sponsoring</h3>
+                        <br>
+
                         <p>
-                            Your sponsorship keeps PyCon India affordable to the widest possible audience.
+                            <span><b>Q. How do I upload presentations to the site?</b><br></span> <span>A. We don't support presentation uploads yet. Please upload your presentation to a public site such as SlideShare or Google Docs and use that link in your talk's description.</span>
                         </p>
+                        <br>
+
                         <p>
-                            In order to ensure a successful conference, the community needs to address a wide range of logistical and organizational challenges. PyCon India attendees sometimes require assistance with expenses especially student attendees, and sponsorship enables us to support those who would otherwise be unable to attend.
+                            <span><b>Q. I want to volunteer for the conference. What should I do?</b><br></span> <span>A. Please share your details by filling <a class="link" href='http://bit.ly/inpycon2017' target="blank">this</a> form and the team will soon get back to you with responsibilities according to the domains you choose.</span>
                         </p>
+                        <br>
+
                         <p>
-                            The attendees of PyCon India will include professional developers from large enterprises and smaller firms as well as people from academia. Delegates come to present their latest developments. With Python already becoming a major enterprise programming language and platform, sponsoring PyCon India 2017 is an excellent opportunity to demonstrate industry leadership in this part of the world. The attendance of PyCon India 2017 is expected to be between 1200 and 1350 delegates.
+                            <span><b>Q. I am a speaker/volunteer at the conference. Do I need to buy a ticket?</b><br></span> <span>A. Yes. At PyCon India, everybody buys tickets. Even the event organizers buy tickets. Your ticket helps keep the event affordable for all.</span>
                         </p>
-                        <br/>
-                        <h5 id="sponsorship-download"><a target="_blank" href="https://goo.gl/dXYqx1">Download Sponsorship Prospectus</a></h5>
+                        <br>
+
+                        <p>
+                            <span><b>Q. Will the Internet and WiFi setup be good enough for a large crowd? Should I get a datacard?</b><br></span> <span>A. We try really hard to arrange good Internet at the venue. Most of the times it is adequate. But the unpredictable amount of usage during the event sometimes causes some problems. So it is fine if you don’t carry a data card, but there is no harm in being prepared for the worst.</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. What are the workshop and conference timings?</b><br></span> <span>A. - Workshop day (Nov 2nd and 3rd): 08:00 AM - 06:30 PM.<br></span> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Conference days (Nov 4th and 5th): 08:00 AM - 5.30 PM.</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. What all does the Conference ticket (November 4 &amp; 5) include?</b><br></span> <span>A. - Full conference pass for two days.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Breakfast, Lunch and Hi-Tea.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- PyCon India T-shirt which will be distributed on Nov 5.</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. My talk is not selected for the conference, can I opt for OpenSpace?</b><br></span> <span>A. Yes. You can submit an OpenSpace proposal once we start accepting the same. Keep following to further updates</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. What is the screening process of OpenSpace talk?</b><br></span> <span>A. There is no screening process.<br></span> <span>We are trying to be better organized upfront by knowing the number of OpenSpace talks. This will help the organizing team plan to get all logistics required.</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. I need to cancel my ticket due to unavoidable circumstances. What is the refund policy?</b><br></span> <span>A. We allow tickets to be canceled, but cancellation might be barred in the last few days leading up to the conference. This space will be updated if cancellation is barred at any time.</span>
+                        </p>
+                        <br>
+
+                        <p>
+                            <span><b>Q. My question is not listed here / I am still unclear about a few things. Whom should I contact?</b><br></span> <span>A. Please send an email to <a class="link" href="mailto:contact@in.pycon.org">contact@in.pycon.org</a>.</span>
+                        </p>
                         <br>
                     </div>
                 </div>
@@ -130,93 +309,15 @@
         </section>
         <!--//others-->
 
-        <!-- ******others****** -->
-        <section id="faq" class="others section">
-            <div class="row text-center">
-                <div class="col-md-12 sponsorship">
-                    <div class="col-md-8 col-md-offset-2">
-
-                        <h2 class="title text-center">
-                            <img src="img/faq.svg" /><br/> FAQ
-                        </h2>
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 text-justify">
-                        <br/>
-                       <!--  <br/>
-                        <h2 class="text-center">FAQ: Frequently Asked Questions</h2>
-                        <br/> -->
-                        <p>
-                            <span><b>Q. I want to present a talk/workshop at the conference. What should I do?</b><br></span>
-                            <span>A. You can submit the proposal for your talk/workshop <a class="link" href='http://in.pycon.org/cfp/2017/proposals/' target="blank">here.</a></span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b>Q. How do I upload presentations to the site?</b><br></span>
-                            <span>A. We don't support presentation uploads yet. Please upload your presentation to a public site such as SlideShare or Google Docs and use that link in your talk's description.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. I want to volunteer for the conference. What should I do?</b><br></span>
-                            <span>A. Please share your details by filling <a class="link" href='http://bit.ly/inpycon2017' target="blank">this</a> form and the team will soon get back to you with responsibilities according to the domains you choose.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. I am a speaker/volunteer at the conference. Do I need to buy a ticket?</b><br></span>
-                            <span>A. Yes. At PyCon India, everybody buys tickets. Even the event organizers buy tickets. Your ticket helps keep the event affordable for all.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. Will the Internet and WiFi setup be good enough for a large crowd? Should I get a datacard?</b><br></span>
-                            <span>A. We try really hard to arrange good Internet at the venue. Most of the times it is adequate. But the unpredictable amount of usage during the event sometimes causes some problems. So it is fine if you don’t carry a data card, but there is no harm in being prepared for the worst.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. What are the workshop and conference timings?</b><br></span>
-                            <span>A. - Workshop day (Nov 2nd and 3rd): 08:00 AM - 06:30 PM.<br/></span>
-                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Conference days (Nov 4th and 5th): 08:00 AM - 5.30 PM.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. What all does the Conference ticket (November 4 &amp; 5) include? </b><br></span>
-                            <span>A. - Full conference pass for two days. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Breakfast, Lunch and Hi-Tea.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- PyCon India T-shirt which will be distributed on Nov 5.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. My talk is not selected for the conference, can I opt for OpenSpace? </b><br></span>
-                            <span>A. Yes. You can submit an OpenSpace proposal once we start accepting the same. Keep following to further updates</a></span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b> Q. What is the screening process of OpenSpace talk? </b><br></span>
-                            <span>A. There is no screening process.<br></span>
-                            <span> We are trying to be better organized upfront by knowing the number of OpenSpace talks. This will help the organizing team plan to get all logistics required.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b>Q. I need to cancel my ticket due to unavoidable circumstances. What is the refund policy?</b><br></span>
-                            <span>A. We allow tickets to be canceled, but cancellation might be barred in the last few days leading up to the conference. This space will be updated if cancellation is barred at any time.</span>
-                        </p>
-                        <br/>
-                        <p>
-                            <span><b>Q. My question is not listed here / I am still unclear about a few things. Whom should I contact?</b><br></span>
-                            <span>A. Please send an email to <a class="link" href="mailto:contact@in.pycon.org">contact@in.pycon.org</a>.</span>
-                        </p>
-                        <br/>
-                    </div>
-                </div>
+        <footer class="footer">
+            <div class="contact">
+                <a class="contact--link" href="mailto:contact@in.pycon.org">contact@in.pycon.org</a> <a class="contact--link" href="https://twitter.com/pyconindia">@pyconindia</a> <a class="contact--link" href="https://github.com/pythonindia">github.com/pythonindia</a>
             </div>
-        </section>
-        <!--//others-->
-    </div>
-    <footer class="footer">
-        <div class="contact">
-            <a href="mailto:contact@in.pycon.org" class="contact--link">contact@in.pycon.org </a>
-            <a href="https://twitter.com/pyconindia" class="contact--link">@pyconindia</a>
-            <a href="https://github.com/pythonindia" class="contact--link">github.com/pythonindia</a>
-        </div>
-    </footer>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        </footer>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/jquery.min.js">
+        </script> 
+        <script src="js/bootstrap.min.js">
+        </script>
+    </body>
 </html>
