@@ -54,7 +54,6 @@ a:active,
 .tg-btn:after,
 .tg-theme-tag,
 .tg-btnbookseat,
-.tg-btnbookseat:hover,
 .tg-eventschedulenav li.active a,
 .tg-eventschedulenav li:hover a,
 .tg-btnfarword:hover,
@@ -89,6 +88,10 @@ a:active,
 .tg-alert i{background:#00aad4;}
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
 .tg-btnvthree:hover{background:#00aad4 !important;}
+.tg-btnbookseat:hover{
+	color: #f0f0f0;
+	background-color: #005266;
+}
 /*=============================================
 			Theme Gradient Color
 =============================================*/
