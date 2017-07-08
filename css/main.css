@@ -685,6 +685,12 @@ li.tg-rss a{background:#ff6600;}
 	padding:0 0 50px;
 	text-align:center;
 }
+.tg-sectionhead-sponsor{
+	width:100%;
+	float:left;
+	padding:0 0 50px;
+	text-align:left;
+}
 .tg-sectionheading{
 	width:100%;
 	float:left;
@@ -936,6 +942,11 @@ li.tg-rss a{background:#ff6600;}
 	color: #444349;
 	padding: 3px 0 0;
 	font: 400 12px/12px 'Poppins', Arial, Helvetica, sans-serif;
+}
+.tg-sectionhead-faq{
+	width:100%;
+	float:left;
+	text-align:center;
 }
 /*==============================================
 			Header								
@@ -2494,6 +2505,10 @@ body.tg-homeone .tg-themescrollbar{height:265px;}
 .mCSB_scrollTools .mCSB_draggerRail{
 	width:4px;
 	background:#e5e5e5;
+}
+body.tg-homeone .tg-commonquestions-faq{
+	-webkit-box-shadow: 0 0 15px 0 rgba(68,67,73,0.20);
+	box-shadow: 0 0 15px 0 rgba(68,67,73,0.20);
 }
 /*==============================================
 			Articles Style						

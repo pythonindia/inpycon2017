@@ -178,15 +178,15 @@ jQuery(document).on('ready', function() {
 	var _tg_locationmap = jQuery("#tg-locationmap");
 	_tg_locationmap.gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
-			options: {
-				title: "Bee Vibrant",
-				icon: "images/map-marker2.png",
-			}
+			address: "New Delhi,India",
+			// options: {
+			// 	title: "Bee Vibrant",
+			// 	icon: "images/map-marker2.png",
+			// }
 		},
 		map: {
 			options: {
-				zoom: 16,
+				zoom: 12,
 				scrollwheel: false,
 				disableDoubleClickZoom: true,
 			}
