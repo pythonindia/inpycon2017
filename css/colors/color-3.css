@@ -47,7 +47,7 @@ a:active,
 .tg-newsletterbox button,
 .tg-btnvthree,
 .tg-packagesvtwo .tg-package .tg-price h3,
-.tg-alertcontent span{color: #3a6ee8;}
+.tg-alertcontent span{color: #00aad4;}
 /*=============================================
 			Theme Background Color
 =============================================*/
@@ -86,9 +86,9 @@ a:active,
 .tg-headervthree .tg-nav .navbar-toggle,
 .tg-headervfour .tg-nav .navbar-toggle,
 .tg-headervtwo .tg-nav .navbar-toggle,
-.tg-alert i{background:#3a6ee8;}
+.tg-alert i{background:#00aad4;}
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
-.tg-btnvthree:hover{background:#3a6ee8 !important;}
+.tg-btnvthree:hover{background:#00aad4 !important;}
 /*=============================================
 			Theme Gradient Color
 =============================================*/
@@ -98,19 +98,19 @@ a:active,
 .tg-shceduledetailimg:before{
 	background:
 		-moz-linear-gradient(top,
-		rgba(58,110,232,0.8) 0%,
-		rgba(58,110,232,0.8) 1%,
-		rgba(58,110,232,0.8) 100%);
+		rgba(70, 133, 185,0.8) 0%,
+		rgba(70, 133, 185,0.8) 1%,
+		rgba(70, 133, 185,0.8) 100%);
 	background:
 		-webkit-linear-gradient(top,
-		rgba(58,110,232,0.8) 0%,
-		rgba(58,110,232,0.8) 1%,
-		rgba(58,110,232,0.8) 100%);
+		rgba(70, 133, 185,0.8) 0%,
+		rgba(70, 133, 185,0.8) 1%,
+		rgba(70, 133, 185,0.8) 100%);
 	background:
 		linear-gradient(to bottom,
-		rgba(58,110,232,0.8) 0%,
-		rgba(58,110,232,0.8) 1%,
-		rgba(58,110,232,0.8) 100%);
+		rgba(70, 133, 185,0.8) 0%,
+		rgba(70, 133, 185,0.8) 1%,
+		rgba(70, 133, 185,0.8) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3a6ee8', endColorstr='#cc3a6ee8',GradientType=0 );
 }
 .tg-innerbanner:before,
@@ -118,16 +118,16 @@ a:active,
 .tg-bgparallax.tg-bgtwitter:before{
 	background:
 		-moz-linear-gradient(top,
-		rgba(66,66,66,0.85) 0%,
-		rgba(58,110,232,0.85) 60%);
+		rgba(0,0,0,0.75) 0%,
+		rgba(70, 133, 185,0.85) 60%);
 	background:
 		-webkit-linear-gradient(top,
-		rgba(66,66,66,0.85) 0%,
-		rgba(58,110,232,0.85) 60%);
+		rgba(0,0,0,0.75) 0%,
+		rgba(70, 133, 185,0.85) 60%);
 	background:
 		linear-gradient(to bottom,
-		rgba(66,66,66,0.85) 0%,
-		rgba(58,110,232,0.85) 60%);
+		rgba(0,0,0,0.75) 0%,
+		rgba(70, 133, 185,0.85) 60%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9424242', endColorstr='#d93a6ee8',GradientType=0 );
 }
 /*=============================================
@@ -155,4 +155,4 @@ input:focus,
 .tg-serviceimg:hover .tg-servicecontent,
 .tg-servicetitle h2 a,
 .tg-tag:hover,
-.tg-btnvthree{border-color: #3a6ee8;}
+.tg-btnvthree{border-color: #00aad4;}
