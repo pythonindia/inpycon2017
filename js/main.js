@@ -50,7 +50,7 @@ jQuery(document).on('ready', function() {
 			NEXT EVENT COUNTER
 	-------------------------------------- */
 	var _tg_upcomingeventcounter = jQuery('.tg-upcomingeventcounter');
-	_tg_upcomingeventcounter.countdown('2017/10/12', function(event) {
+	_tg_upcomingeventcounter.countdown('2017/11/4', function(event) {
 		var $this = jQuery(this).html(event.strftime(''
 			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span> Days</span><span>%-D</span></div></div>'
 			+ '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>Hours</span><span>%H</span></div></div>'
@@ -233,7 +233,7 @@ jQuery(document).on('ready', function() {
 			}
 		}
 	});
-	
+
 	/* -------------------------------------
 			ROCKSTARS SLIDER
 	-------------------------------------- */

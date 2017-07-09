@@ -28,7 +28,7 @@
 							<div class="tg-slidercontent">
 								{# <span>4th-5th Nov, 2017</span> #}
 								<h1>PyCon India 2017</h1>
-								<!-- <div class="tg-upcomingeventcounter"></div> -->
+								{# <div class="tg-upcomingeventcounter"></div> #}
 								<ul class="tg-matadata tg-eventmatadata">
 									<li>
 										<i class="fa fa-calendar-check-o"></i>
@@ -91,8 +91,8 @@
 			<!--************************************
 					About Us End
 			*************************************-->
-		{% include 'sections/statistics.html' %}
-		{% include 'sections/speakers.html' %}
+		{% include 'sections/_statistics.html' %}
+		{% include 'sections/_speakers.html' %}
 			<!--************************************
 					Feature Event Start
 			*************************************-->
@@ -2179,88 +2179,7 @@
 			<!--************************************
 					Testimonial Signup End
 			*************************************-->
-			<!--************************************
-					Sponsor Starts
-			*************************************-->
-			<section class="tg-sectionspace tg-haslayout tg-bgparallax tg-bgsponser">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-							<div class="tg-sectionhead tg-colorwhite">
-								<div class="tg-sectionheading">
-									<h2>Brands Behind Us</h2>
-									<h3>Our Sponsors</h3>
-								</div>
-								<!-- <div class="tg-description">
-									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt utnaecte laboret dolore magna aliqua enim adiatai minim veniam quista nostrud exercitation ullamco laboris nisi ut aliquip exeation.</p>
-								</div> -->
-							</div>
-						</div>
-						<ul class="tg-sponsers">
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-							<li>
-								<figure class="tg-sponder">
-									<a href="javascript:void(0);">
-										<img src="images/sponser/sponsor.png" alt="image description">
-									</a>
-								</figure>
-							</li>
-						</ul>
-						<a class="tg-btn" href="sponsorship.html">Become A Sponser</a>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					Sponsor End
-			*************************************-->
+			{% include 'sections/_sponsors.html' %}
 			<!--************************************
 					Locations Start
 			*************************************-->

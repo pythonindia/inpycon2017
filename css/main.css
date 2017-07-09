@@ -2190,7 +2190,7 @@ li.tg-rss a{background:#ff6600;}
 	padding:0;
 	clear:both;
 	width:200px;
-	display:block;
+	/*display:block;*/
 	color:#444349;
 	margin:0 auto;
 	background:#fff;
