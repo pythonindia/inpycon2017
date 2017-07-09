@@ -2585,6 +2585,29 @@ body.tg-homeone .tg-commonquestions-faq{
 }
 .tg-postcontent .tg-description p{margin:0;}
 /*==============================================
+			Twitter Widget Style						
+==============================================*/
+@media (min-width: 1200px)  {
+	iframe[id*="twitter-widget-0"] {
+		margin-left: 8%;
+	}
+}
+@media (min-width: 720px) and (max-width: 767px)  {
+	iframe[id*="twitter-widget-0"] {
+		margin-left: 15%;
+	}
+}
+@media (min-width: 644px) and (max-width: 719px)  {
+	iframe[id*="twitter-widget-0"] {
+		margin-left: 13%;
+	}
+}
+@media (min-width: 570px) and (max-width: 643px)  {
+	iframe[id*="twitter-widget-0"] {
+		margin-left: 8%;
+	}
+}
+/*==============================================
 			Footer Style						
 ==============================================*/
 .tg-bgtwitter{background-image: url(../images/bg-parallax/bg-parallax-07.jpg);}
