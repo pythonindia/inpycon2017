@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="css/jquery.fullpage.css">
 	<link rel="stylesheet" href="css/transitions.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/colors/color-3.css">
+	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<style>
@@ -34,9 +34,78 @@
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 	<!--************************************
+			Cookie Popup Start
+	*************************************-->
+	<div class="tg-alert alert alert-success">
+			<i class="icon-star"></i>
+		<span class="tg-alertcontent"><strong>Info Message:</strong> By continuing to use the site, you agree to the use of cookies. more information 
+			<a class="tg-btn" href="#">Accept</a>
+			<a href="#" class="close" data-dismiss="alert">×</a>
+		</span>
+	</div>
+	<!--************************************
+			Cookie Popup End
+	*************************************-->
+	<!--************************************
 			Wrapper Start
 	*************************************-->
 	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				ChatBox Start
+		*************************************-->
+		<div class="tg-chatpopup">
+			<div id="tg-chatbox" class="tg-chatbox">
+				<div class="tg-clientnameandstatus">
+					<span>Rodrigo Wolfrum (Support)</span>
+					<a id="tg-btnclosechat" class="tg-btnclosechat" href="javascript:void(0);"><i class="icon-cross"></i></a>
+				</div>
+				<div class="tg-chathistory">
+					<div class="tg-scrollbar">
+						<div class="tg-clientmessage">
+							<div class="tg-messagebox">
+								<p>Can you send me latest event room snapshot?</p>
+							</div>
+							<div class="tg-messagestatus"><time datetime="2017-05-05">Sent 14:11</time></div>
+						</div>
+						<div class="tg-supportmessage">
+							<div class="tg-messagebox">
+								<figure><img src="images/img-07.jpg" alt="image description"></figure>
+								<p>Sure,here it is.</p>
+							</div>
+							<div class="tg-messagestatus"><time datetime="2017-05-05">Sent 14:11</time></div>
+						</div>
+						<div class="tg-clientmessage">
+							<div class="tg-messagebox">
+								<p>That’s Awsome, also send me at <a href="javascript:void(0);">jhon@domain.com</a></p>
+							</div>
+							<div class="tg-messagestatus"><time datetime="2017-05-05">Sent 14:11</time></div>
+						</div>
+					</div>
+				</div>
+				<form class="tg-formchat">
+					<fieldset>
+						<textarea name="message" placeholder="Type here &amp; press enter"></textarea>
+						<div class="tg-texticons">
+							<i class="icon-thumbs-up"></i>
+							<i class="icon-thumbs-down"></i>
+							<i class="icon-smile"></i>
+						</div>
+					</fieldset>
+				</form>
+				<div class="tg-chatfoot">
+					<div class="tg-texticons">
+						<i class="icon-volume-high"></i>
+						<i class="icon-envelope"></i>
+						<i class="icon-paperclip"></i>
+					</div>
+					<span class="tg-poweredby">Powered by: <a href="javascript:void(0);">Beevariant</a></span>
+				</div>
+			</div>
+			<div id="tg-getsupport" class="tg-chatclientimg tg-themeimgborder"><img src="images/img-06.jpg" alt="image description"></div>
+		</div>
+		<!--************************************
+				ChatBox End
+		*************************************-->
 		<!--************************************
 				Header Start
 		*************************************-->
