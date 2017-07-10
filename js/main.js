@@ -20,10 +20,12 @@ jQuery(document).on('ready', function() {
 	var _tg_homeslider = jQuery('#tg-homeslider')
 	_tg_homeslider.owlCarousel({
 		items: 1,
-		loop: true,
+		loop: false,
 		dots: true,
 		nav: true,
 		autoplay: true,
+		touchDrag: false,
+		mouseDrag: false,
 		animateOut: 'fadeOut',
 		navText: [
 			'<i class="icon-arrow-left"></i>',
