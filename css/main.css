@@ -1436,6 +1436,35 @@ li.tg-rss a{background:#ff6600;}
 	padding:100px 0;
 	position:relative;
 }
+.tg-counterholder1{
+	width:100%;
+	padding:20px 0;
+	position:relative;
+}
+.tg-counterholder1:nth-child(even):before{
+	top:0;
+	left:0;
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:
+		-moz-linear-gradient(top,
+		rgba(0,0,0,0.1) 0%,
+		rgba(0,0,0,0.1) 1%,
+		rgba(0,0,0,0.1) 100%);
+	background:
+		-webkit-linear-gradient(top,
+		rgba(0,0,0,0.1) 0%,
+		rgba(0,0,0,0.1) 1%,
+		rgba(0,0,0,0.1) 100%);
+	background:
+		linear-gradient(to bottom,
+		rgba(0,0,0,0.1) 0%,
+		rgba(0,0,0,0.1) 1%,
+		rgba(0,0,0,0.1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 );
+}
 .tg-counterholder:nth-child(even):before{
 	top:0;
 	left:0;
