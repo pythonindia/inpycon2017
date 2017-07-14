@@ -7,9 +7,10 @@ jQuery(document).on('ready', function() {
 			COLLAPSE MENU SMALL DEVICES
 	-------------------------------------- */
 	function collapseMenu(){
-		jQuery('.menu-item-has-children').prepend('<span class="tg-dropdowarrow"><i class="icon-chevron-right"></i></span>');
+		jQuery('.menu-item-has-children').prepend('<span class="tg-dropdowarrow"><i class="icon-chevron-down"></i></span>');
 		jQuery('.menu-item-has-children span').on('click', function() {
 			jQuery(this).next().next().slideToggle(300);
+			jQuery('.icon-chevron-down').toggleClass('icon-chevron-up');
 			jQuery(this).parent('.menu-item-has-children').toggleClass('tg-open');
 		});
 	}

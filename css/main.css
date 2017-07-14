@@ -1164,7 +1164,15 @@ li.tg-rss a{background:#ff6600;}
 .tg-bannersocialicons li a i{
 	width:38px;
 	line-height:38px;
+	font-size: 2em;
 }
+
+@media screen and (max-width: 767px) {
+	.tg-bannersocialicons li a i {
+		font-size: 1.5em;
+	}
+}
+
 .tg-homeslider{
 	position: relative;
 	height: 100%;
