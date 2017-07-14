@@ -48,6 +48,15 @@ jQuery(document).on('ready', function() {
 			scrollTop: jQuery("#tg-main").offset().top + offset
 		}, 2000);
 	});
+
+	/* -------------------------------------
+	     ADD ANIMATIONS TO SECTION SCROLL
+	 -------------------------------------- */
+    $('a[href*=\\#]').on('click', function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+    });
+
 	/* -------------------------------------
 			NEXT EVENT COUNTER
 	-------------------------------------- */
