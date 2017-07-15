@@ -50,7 +50,7 @@
       var element = document.getElementById(domNode);
       var html = '<ul class="tborder">';
       while(n < x) {
-        html += '<li>' + tweets[n] + '</li>';
+        html += '<li class="tcontent">' + tweets[n] + '</li>';
         n++;
       }
       html += '</ul>';
