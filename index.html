@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/jquery.fullpage.css">
 	<link rel="stylesheet" href="css/transitions.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="css/twitterFetcher.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/colors/color-3.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -70,7 +71,7 @@
 									<ul class="sub-menu">
 										<li><a href="/#speakers">Speakers</a></li>
 										<li><a href="volunteer.html">Volunteer</a></li>
-										<li><a href="https://in.pycon.org/blog/">Blog</a></li>
+										<li><a href="blog.html">Blog</a></li>
 										<li><a href="coc.html">Code of Conduct</a></li>
 									</ul>
 								</li>
@@ -2600,14 +2601,8 @@
 							</div>
 						</div>
 						<div class="tg-latestarticles">
-							<div class="col-sm-offset-2 col-sm-10 col-md-offset-3 col-md-6 col-lg-6">
-								<a class="twitter-timeline"
-									data-width="500"
-									data-tweet-limit="3"
-									data-chrome="nofooter noborders noscrollbar transparent noheader"
-									data-dnt='true'
-									href="https://twitter.com/pyconindia"></a>
-								<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<div class="col-sm-12 col-md-12 col-lg-12">
+								<div id="pyconindiaTweets"></div>
 							</div>
 							<!--<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<article class="tg-post tg-themepost">
@@ -2749,8 +2744,12 @@
 	<!--************************************
 			Wrapper End
 	*************************************-->
+	<!-- moment.js only needed for Query 6 example -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+    <script type="text/javascript" src="js/vendor/twitterFetcher.js"></script>
+    <script type="text/javascript" src="js/vendor/config.js"></script>
 	<script src="js/vendor/jquery-library.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/bootstrap.js"></script>
 	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
 	<script src="js/customScrollbar.min.js"></script>
 	<script src="js/packery.pkgd.min.js"></script>

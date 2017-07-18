@@ -2878,10 +2878,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active { border-color: #337ab7
 }
 .media { margin-top: 15px; }
 .media:first-child { margin-top: 0; }
-.media, .media-body {
+/*.media, .media-body {
 	overflow: hidden;
 	zoom: 1;
-}
+}*/
 .media-body { width: 10000px; }
 .media-object { display: block; }
 .media-object.img-thumbnail { max-width: none; }

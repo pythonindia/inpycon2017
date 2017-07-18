@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+PyCon India 2017 in New Delhi | November 2nd to 5th    </title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pycon India">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">        
+    <link id="theme-style" rel="stylesheet" href="css/blog.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+      </script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+      </script>
+    <![endif]-->
+        <!--<link href="http://in.pycon.org/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="In PyCon Blog Full Atom Feed" />-->
+  </head>
+  <body data-spy="scroll">
+    <header id="tg-header" class="tg-header tg-haslayout">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <strong class="tg-logo"><a href="index.html"><img id="pyconLogo" src="https://pythonindia.github.io/inpycon2017/images/logo.png" alt="company logo here"></a></strong>
+                    <div class="tg-navigationarea">
+                        <nav id="tg-nav" class="tg-nav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                                <ul>
+                                    <li><a href="https://in.pycon.org/2016/">2016</a></li>
+                                    <li><a href="/2017/sponsorship.html">Sponsorship</a></li>
+                                    <li><a href="/2017/gallery.html">Gallery</a></li>
+                                    <li><a href="/2017/faqs.html">FAQs</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0);">More</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/2017/#speakers">Speakers</a></li>
+                                            <li><a href="/2017/#team">Team</a></li>
+                                            <li><a href="/2017/coc.html">Code of Conduct</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="blog" class="blog section offset-header">
+        <div class="container">
+            <section class="blogpost-listings">
+                
+                <!--<article class="blogpost">
+                    <a href="./2016/Winner-of-Kenneth-Gonsalves-Award-2016.html">
+                        <h1 class="title"> "Winner of Kenneth Gonsalves Award "</h1>
+                    </a>
+                    <div class='meta'><time datetime="2016-09-16 19:00:00+05:30" itemprop="datePublished"><small>Published: September 16, 2016</small></time></div>
+
+                    <div><p><strong>PSSI is happy as well as.</strong></p>
+                    <h3>Dr.Ajith Kumar B.P</h3>
+                    <p><img alt="Dr.Ajith Kumar B.P" src="https://in.pycon.org/2015/images/ajith.jpg" /></p>
+                    <p>Ajith Kumar B.P. has been working as a scientist.</p>
+                    <p><a href="https://in.pycon.org/2016/">PyCon India</a></p></div>
+                </article>-->
+
+            </section>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container text-center">
+        <img src="https://pythonindia.github.io/inpycon2017/images/logo.png" height="150" width="250" style="margin: 0 auto;">
+        <p> Copyright © 2017 <a href="https://pssi.org.in" target="_blank">Python Software Society of India.</a> </p>
+      </div>
+      <!--//container-->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script>
+        $.get('https://crossorigin.me/https://in.pycon.org/blog/feeds/all.atom.xml', function (blogpost) {
+
+            var article = '';
+
+            $(blogpost).find("entry").each(function () { 
+                var post = $(this);
+
+                //generating date formate
+                var pubDate = post.find("published").text();
+                var date = new Date(pubDate);
+                var months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                var postDate = months[date.getMonth()] +" "+ date.getDate() + ", " + date.getFullYear()
+
+                //generating link from id
+                var link = post.find("id").text();
+                var postLink = link.slice(28);
+
+                //main article container
+                article += '<article class="blogpost">';
+
+                //article title    
+                article += '<a href="'+postLink+'"><h1 class="title">'
+                            +post.find("title").text()+
+                            '</h1></a>';
+
+                //article published date            
+                article +=  '<div class="meta">'+
+                            '<time datetime="'+postDate+'" itemprop="datePublished">'+
+                            '<small>Published: '+postDate+'</small>'+
+                            '</time>'+
+                            '</div>';
+
+                //article summary
+                article += '<p>'+post.find('summary').text()+'</p>';
+
+                //end article conatiner
+                article += '</article>'
+
+                // console.log("------------------------");
+                // console.log(post.find("title").text());
+                // console.log("link       : " + postLink);
+                // console.log("title      : " + post.find("title").text());
+                // console.log("author     : " + post.find("author").text());
+                // console.log("description: " + post.find("description").text());
+                
+            });
+
+            $('.blogpost-listings').append(article);
+        });
+    </script>
+
+
+  </body>
+</html>
