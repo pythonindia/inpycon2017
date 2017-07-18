@@ -4926,12 +4926,6 @@ body.tg-comingsoonpage .tg-foorterbar .tg-socialicons{padding:0;}
 }
 .tg-alertcontent .tg-btn{float:right;}
 
-@media screen and (max-width: 568px) and (min-width: 480px) {
-    .statistics-mobile {
-        padding-left: 30%;
-    }
-}
-
 .hr-statistics{
 	color: white;
 }
