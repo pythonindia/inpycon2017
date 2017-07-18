@@ -49,9 +49,9 @@ jQuery(document).on('ready', function() {
 		}, 2000);
 	});
 
-	/* -------------------------------------
-	     ADD ANIMATIONS TO SECTION SCROLL
-	 -------------------------------------- */
+    /*--------------------------------------
+	   ADD ANIMATIONS TO SECTION SCROLL
+    ---------------------------------------*/
     function ea_scroll( hash ) {
         var target = $( hash );
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
