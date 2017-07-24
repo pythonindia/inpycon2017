@@ -12,7 +12,7 @@ To monitor your source directory for changes, and recompile files if they change
 python build.py & python -m SimpleHTTPServer && fg
 ```
 
-For Python 3 : 
+For Python 3.6.0 : 
 ```
 python build.py & python -m http.server && fg
 ```
