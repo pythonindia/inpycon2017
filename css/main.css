@@ -1384,7 +1384,7 @@ li.tg-rss a{background:#ff6600;}
 .tg-btnarea{
 	width:100%;
 	float:left;
-	padding:30px 0 0 50px;
+	padding:30px 0 0;
 }
 .tg-btnarea .tg-btn + .tg-btn{margin:0 0 0 26px;}
 /*==============================================
