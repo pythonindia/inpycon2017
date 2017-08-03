@@ -1194,7 +1194,7 @@ li.tg-rss a{background:#ff6600;}
 .tg-bannerimg figcaption{
 	width:100%;
 	float:left;
-	height: 945px;
+	height: 100vh;
 	text-align:center;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1226,7 +1226,6 @@ li.tg-rss a{background:#ff6600;}
 		rgba(217,8,69,0.85) 60%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9444349', endColorstr='#d9d90845',GradientType=0 );
 }
-.tg-homebannervtwo .tg-bannerimg figcaption{height: 100%;}
 .tg-slidercontent{
 	width:100%;
 	float:left;
@@ -4941,3 +4940,6 @@ body.tg-comingsoonpage .tg-foorterbar .tg-socialicons{padding:0;}
 	color: white;
 }
 
+.height-100vh {
+	height: 100vh;
+}
