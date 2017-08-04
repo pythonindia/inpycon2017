@@ -409,7 +409,13 @@ width: 90%;
 
 
 /*css media queries*/
-  @media (max-width: 320px) {
+@media all and (max-width: 379px) {
+  .tweet {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 320px) {
   .btn-group {
     position: relative;
     right: 15px;
