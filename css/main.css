@@ -971,6 +971,7 @@ li.tg-rss a{background:#ff6600;}
   padding:0 30px;
   margin:0 0 0 30px;
 }
+.tg-btn.tg-btnbookseat{max-width: 80%;}
 .tg-btn.tg-btnbookseat:hover{color:#fff;}
 .tg-btnbookseat span{
   top:100%;
