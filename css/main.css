@@ -1192,39 +1192,39 @@ li.tg-rss a{background:#ff6600;}
   position:relative;
 }
 .tg-bannerimg figcaption{
-	width:100%;
-	float:left;
-	height: 100vh;
-	text-align:center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	justify-content: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	background:
-		-moz-linear-gradient(top,
-		rgba(68,67,73,0.85) 0%,
-		rgba(70,66,73,0.85) 1%,
-		rgba(217,8,69,0.85) 60%);
-	background:
-		-webkit-linear-gradient(top,
-		rgba(68,67,73,0.85) 0%,
-		rgba(70,66,73,0.85) 1%,
-		rgba(217,8,69,0.85) 60%);
-	background:
-		linear-gradient(to bottom,
-		rgba(68,67,73,0.85) 0%,
-		rgba(70,66,73,0.85) 1%,
-		rgba(217,8,69,0.85) 60%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9444349', endColorstr='#d9d90845',GradientType=0 );
+  width:100%;
+  float:left;
+  height: 100vh;
+  text-align:center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background:
+    -moz-linear-gradient(top,
+    rgba(68,67,73,0.85) 0%,
+    rgba(70,66,73,0.85) 1%,
+    rgba(217,8,69,0.85) 60%);
+  background:
+    -webkit-linear-gradient(top,
+    rgba(68,67,73,0.85) 0%,
+    rgba(70,66,73,0.85) 1%,
+    rgba(217,8,69,0.85) 60%);
+  background:
+    linear-gradient(to bottom,
+    rgba(68,67,73,0.85) 0%,
+    rgba(70,66,73,0.85) 1%,
+    rgba(217,8,69,0.85) 60%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9444349', endColorstr='#d9d90845',GradientType=0 );
 }
 .tg-slidercontent{
   width:100%;
@@ -4941,5 +4941,5 @@ body.tg-comingsoonpage .tg-foorterbar .tg-socialicons{padding:0;}
 }
 
 .height-100vh {
-	height: 100vh;
+  height: 100vh;
 }
