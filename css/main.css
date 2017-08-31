@@ -2196,7 +2196,8 @@ li.tg-rss a{background:#ff6600;}
 	width:100%;
 	float:left;
 	list-style:none;
-	padding:0 0 15px;
+  padding-bottom:15px;
+  padding-left: 7%;
 }
 .tg-sponsors li{
 	width:25%;
@@ -2221,12 +2222,6 @@ li.tg-rss a{background:#ff6600;}
 .tg-sponder a img{
   opacity: 1;
   display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-.tg-sponder:hover a img{
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }
 .tg-bgsponsor .tg-btn{
   padding:0;
