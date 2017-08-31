@@ -2193,22 +2193,22 @@ li.tg-rss a{background:#ff6600;}
 ==============================================*/
 .tg-bgsponsor{background-image: url(../images/bg-parallax/bg-parallax-01.jpg);}
 .tg-sponsors{
-  width:100%;
-  float:left;
-  list-style:none;
-  padding:0 0 15px;
+	width:100%;
+	float:left;
+	list-style:none;
+	padding:0 0 15px;
 }
 .tg-sponsors li{
-  width:25%;
-  float:left;
-  padding:15px;
-  list-style-type:none;
+	width:25%;
+	float:left;
+	padding:15px;
+	list-style-type:none;
 }
 .tg-sponder{
-  margin:0;
-  width:100%;
-  float:left;
-  background:#fff;
+	margin:0;
+	width:100%;
+	float:left;
+	background:#fff;
 }
 .tg-sponder a{
   height:150px;
