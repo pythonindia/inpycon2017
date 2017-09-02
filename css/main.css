@@ -2193,22 +2193,24 @@ li.tg-rss a{background:#ff6600;}
 ==============================================*/
 .tg-bgsponsor{background-image: url(../images/bg-parallax/bg-parallax-01.jpg);}
 .tg-sponsors{
-  width:100%;
-  float:left;
-  list-style:none;
-  padding:0 0 15px;
+	width:100%;
+	float:left;
+	list-style:none;
+  padding-bottom:15px;
+  padding-left: 7%;
 }
 .tg-sponsors li{
-  width:25%;
-  float:left;
-  padding:15px;
-  list-style-type:none;
+	width:25%;
+	float:left;
+	padding:15px;
+	list-style-type:none;
 }
 .tg-sponder{
-  margin:0;
+	margin:0;
   width:100%;
-  float:left;
-  background:#fff;
+  padding: 5px;
+	float:left;
+	background:#fff;
 }
 .tg-sponder a{
   height:150px;
@@ -2221,12 +2223,6 @@ li.tg-rss a{background:#ff6600;}
 .tg-sponder a img{
   opacity: 1;
   display: block;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-.tg-sponder:hover a img{
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }
 .tg-bgsponsor .tg-btn{
   padding:0;
