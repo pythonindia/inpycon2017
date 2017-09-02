@@ -2197,7 +2197,7 @@ li.tg-rss a{background:#ff6600;}
 	float:left;
 	list-style:none;
   padding-bottom:15px;
-  padding-left: 7%;
+  padding-left: 21%;
 }
 .tg-sponsors li{
 	width:25%;
@@ -2210,7 +2210,8 @@ li.tg-rss a{background:#ff6600;}
   width:100%;
   padding: 5px;
 	float:left;
-	background:#fff;
+  background:#fff;
+  border-radius: 2%;
 }
 .tg-sponder a{
   height:150px;
@@ -2223,6 +2224,8 @@ li.tg-rss a{background:#ff6600;}
 .tg-sponder a img{
   opacity: 1;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 .tg-bgsponsor .tg-btn{
   padding:0;
