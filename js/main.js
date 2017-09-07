@@ -190,7 +190,7 @@ jQuery(document).on('ready', function() {
     },
     map: {
       options: {
-        // Changing zoom from "12" to "100"
+        // Changing zoom from "12" to "16"
         zoom: 16,
         scrollwheel: false,
         // Changing disableDoubleClickZoom from "true" to "false"

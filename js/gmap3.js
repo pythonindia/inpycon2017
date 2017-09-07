@@ -58,7 +58,7 @@ function initDefaults() {
         mapTypeId : gm.MapTypeId.ROADMAP,
 
         // Changin Center to SSCBS location as [28.7327431,77.1165991]
-        // Old --> center: [28.6524018,77.0314263],
+        // Old center: [28.6524018,77.0314263],
         center: [28.7327431,77.1165991],
         zoom: 2
       },
