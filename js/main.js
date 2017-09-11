@@ -181,7 +181,8 @@ jQuery(document).on('ready', function() {
   var _tg_locationmap = jQuery("#tg-locationmap");
   _tg_locationmap.gmap3({
     marker: {
-      address: "New Delhi,India",
+      // Changing the address from "New Delhi, India" to "SSCBS"
+      address: "Shaheed Sukhdev College of Business Studies",
       // options: {
       //  title: "Bee Vibrant",
       //  icon: "images/map-marker2.png",
@@ -189,9 +190,11 @@ jQuery(document).on('ready', function() {
     },
     map: {
       options: {
-        zoom: 12,
+        // Changing zoom from "12" to "16"
+        zoom: 16,
         scrollwheel: false,
-        disableDoubleClickZoom: true,
+        // Changing disableDoubleClickZoom from "true" to "false"
+        disableDoubleClickZoom: false,
       }
     }
   });

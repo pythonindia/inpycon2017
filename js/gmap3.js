@@ -56,7 +56,10 @@ function initDefaults() {
       }()),
       map: {
         mapTypeId : gm.MapTypeId.ROADMAP,
-        center: [28.6524018,77.0314263],
+
+        // Changin Center to SSCBS location as [28.7327431,77.1165991]
+        // Old center: [28.6524018,77.0314263],
+        center: [28.7327431,77.1165991],
         zoom: 2
       },
       overlay: {
