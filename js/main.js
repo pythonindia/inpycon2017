@@ -310,4 +310,5 @@ jQuery(document).on('ready', function() {
   jQuery('.close').on('click', function(){
     jQuery('body').removeClass('tg-showpopup');
   });
+
 });
