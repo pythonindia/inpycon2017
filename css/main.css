@@ -2951,6 +2951,9 @@ body.tg-homeone .tg-commonquestions-faq{
 	position: relative;
 	width: 100%;
 }
+.timeline-content{
+	word-wrap: break-word;
+}
 .timeline-content > .btn-group {
 	float: left;
 	margin-top: 15px;
