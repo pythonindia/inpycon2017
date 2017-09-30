@@ -2197,13 +2197,35 @@ li.tg-rss a{background:#ff6600;}
 	float:left;
 	list-style:none;
   padding-bottom:15px;
-  padding-left: 21%;
+}
+@media (min-width: 992px){
+  .tg-sponsors{
+    padding-left: 21%;
+  }
 }
 .tg-sponsors li{
 	width:25%;
 	float:left;
 	padding:15px;
 	list-style-type:none;
+}
+@media (min-width: 991px){
+  .gold {
+      margin-left: 12%;
+      width: 50% !important;
+  }
+}
+@media (max-width: 991px){
+  .gold {
+      margin-left: 25%;
+      width: 50% !important;
+  }
+}
+@media (max-width: 699px){
+  .gold {
+      margin-left: 0%;
+      width: 100% !important;
+  }
 }
 .tg-sponder{
 	margin:0;
@@ -2225,7 +2247,10 @@ li.tg-rss a{background:#ff6600;}
   opacity: 1;
   display: block;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 70%;
+}
+.psf a img{
+  max-width: 80%;
 }
 .tg-bgsponsor .tg-btn{
   padding:0;
@@ -2235,6 +2260,14 @@ li.tg-rss a{background:#ff6600;}
   color:#444349;
   margin:0 auto;
   background:#fff;
+}
+.not-visible{
+  opacity: 0;
+}
+@media (max-width: 568px){
+  .not-visible{
+    display: none;
+  }
 }
 /*==============================================
       Price Plan Style
