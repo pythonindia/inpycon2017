@@ -2209,6 +2209,24 @@ li.tg-rss a{background:#ff6600;}
 	padding:15px;
 	list-style-type:none;
 }
+@media (min-width: 991px){
+  .gold {
+      margin-left: 12%;
+      width: 50% !important;
+  }
+}
+@media (max-width: 991px){
+  .gold {
+      margin-left: 25%;
+      width: 50% !important;
+  }
+}
+@media (max-width: 699px){
+  .gold {
+      margin-left: 0%;
+      width: 100% !important;
+  }
+}
 .tg-sponder{
 	margin:0;
   width:100%;
@@ -2229,7 +2247,10 @@ li.tg-rss a{background:#ff6600;}
   opacity: 1;
   display: block;
   max-width: 100%;
-  max-height: 80%;
+  max-height: 70%;
+}
+.psf a img{
+  max-width: 80%;
 }
 .tg-bgsponsor .tg-btn{
   padding:0;
