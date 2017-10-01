@@ -311,4 +311,131 @@ jQuery(document).on('ready', function() {
     jQuery('body').removeClass('tg-showpopup');
   });
 
+  /*---------------------------------------
+    SCEHDULE SECTION
+  ---------------------------------------*/
+
+  function getScheduleAndTracks() {
+    schedule = {};
+    tracks = {};
+
+    $.ajax({
+      url: "../data/api/schedule.json",
+      async:false,
+      success: function(response) {
+      schedule = response;
+      },
+    });
+
+    $.ajax({
+      url: "../data/api/tracks.json",
+      async:false,
+      success: function(response) {
+      tracks = response;
+      },
+    });
+
+    return {schedule: schedule, tracks: tracks};
+  }
+
+  var talk_count = 0;
+  var DATE_ONE = "2017-10-02";
+  var DATE_TWO = "2017-10-03";
+  var DATE_THREE = "2017-10-04";
+  var DATE_FOUR = "2017-10-05";
+  var API_VERSION = "0.0.1";
+  var response = getScheduleAndTracks();
+  var schedule = response.schedule[API_VERSION][0];
+  var track_halls = response.schedule[API_VERSION][0]["tracks"];
+  var tracks = response.tracks[API_VERSION][0]; 
+  var day_1_schedule = schedule[DATE_ONE];
+  var day_2_schedule = schedule[DATE_TWO];
+  var day_3_schedule = schedule[DATE_THREE];
+  var day_4_schedule = schedule[DATE_FOUR];
+  var row_names = [["one", "two", "three", "four"],
+                   ["five", "six", "seven", "eight"],
+                   ["nine", "ten", "eleven", "twelve"],
+                   ["thirteen", "fourteen", "fifteen", "sixteen"]];
+
+  function updateSchedule() {
+      updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
+      updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
+      updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
+      updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
+      updateTrackHall(track_halls, '.track-hall');
+  }
+
+  function updateScheduleForADay(schedule, tracks, table_body, row_names) {
+      var schedule_rows = [[], [], [], []];
+      for (var i = 0; i < schedule.length; i++) {
+          var talk_id = schedule[i].talk_id;
+          var entity_details = schedule[i];
+          var title = entity_details.title;
+          var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
+          var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
+          var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
+          var current_day_track = schedule[i].track;
+
+          if (current_day_track == 'all' || typeof current_day_track == "undefined") {
+            schedule_rows[0].push([time_duration, display_title, speaker_name]);
+            schedule_rows[1].push([time_duration, display_title, speaker_name]);
+            schedule_rows[2].push([time_duration, display_title, speaker_name]);
+            schedule_rows[3].push([time_duration, display_title, speaker_name]);
+          }
+          else if (current_day_track == '1') {
+              schedule_rows[0].push([time_duration, display_title, speaker_name]);
+          } else if (current_day_track == '2') {
+              schedule_rows[1].push([time_duration, display_title, speaker_name]);
+          } else if (current_day_track == '3') {
+              schedule_rows[2].push([time_duration, display_title, speaker_name]);
+          } else {
+            schedule_rows[3].push([time_duration, display_title, speaker_name]);
+          }
+      }
+      insertTableRows(table_body, schedule_rows, row_names);
+  }
+
+  function insertTableRows(table, rows, row_names) {
+    var row_html = '';
+    var row_no = 0;
+    $(rows).each(function() {
+      var row = $(this);
+      row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane" id="hall-'+ row_names[row_no] +'">';
+      $(row).each(function() {
+          var nrow = $(this);
+          row_html += `<div class="tg-event">
+                        <div class="tg-eventspeaker">
+                          <div class="tg-contentbox">
+                            <div class="tg-eventhead">
+                            <div class="tg-leftarea">
+                              <time datetime="2017-12-12">`+ nrow[0] +`</time>
+                              <div class="tg-title">
+                                <h2>`+ nrow[1] +`</h2>
+                              </div>
+                            </div>
+                            <div class="tg-rightarea">
+                              <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
+                            </div>
+                          </div>
+                            <div class="tg-speakername">
+                              <h2>`+ nrow[2] +`</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>` 
+        });
+      row_html += '</div>';
+      row_no += 1;
+      });
+    $(table).append(row_html);
+  }
+
+  function updateTrackHall(track_halls, selector) {
+      track_halls.forEach(function(element, index) {
+          $($(selector)[index]).html(element);
+      });
+  }
+
+  updateSchedule();
+
 });

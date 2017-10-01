@@ -1,0 +1,64 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>doc.md</title>
+      </head>
+      <body>
+        <pre><code>GET /api/schedule.json
+</code></pre><pre><code>{
+  &quot;0.0.1&quot;: [
+    {
+      &quot;tracks&quot;: [&quot;Audi 1&quot;, &quot;Audi 2&quot;, &quot;Audi 3&quot;],
+      &quot;2017-03-18&quot;: [
+        {
+          &quot;talk_id&quot;: &quot;00&quot;,
+          &quot;title&quot;: &quot;Registration&quot;,
+          &quot;start_time&quot;: &quot;08:00&quot;,
+          &quot;end_time&quot;: &quot;09:00&quot;,
+          &quot;track&quot;: &quot;all&quot;
+        },
+        {
+          &quot;talk_id&quot;: &quot;01&quot;,
+          &quot;title&quot;: &quot;Introductions &amp; Opening Ceremony&quot;,
+          &quot;start_time&quot;: &quot;09:00&quot;,
+          &quot;end_time&quot;: &quot;09:30&quot;,
+          &quot;track&quot;: &quot;all&quot;
+        }]
+    }]
+}
+</code></pre><pre><code>GET /api/event.json
+</code></pre><pre><code>{
+  &quot;0.0.1&quot;:[{
+  &quot;name&quot;: &quot;Event Name Here&quot;,
+  &quot;venue&quot;: &quot;Venue Name here&quot;,
+  &quot;start_date&quot;: &quot;2017-03-18T8:00:00Z&quot;,
+  &quot;end_date&quot;: &quot;2017-03-19T18:00:00Z&quot;,
+  &quot;venue_partners&quot;: [{
+      &quot;name&quot;: &quot;Venue Details&quot;,
+      &quot;about&quot;: &quot;About venue&quot;,
+      &quot;url&quot;: &quot;http://externalurltovenue.org&quot;
+    }]
+  }]
+}
+</code></pre><pre><code>GET /api/sponsors.json
+</code></pre><pre><code>{
+  &quot;0.0.1&quot;: [
+    {
+      &quot;name&quot;: &quot;Sponsor Name&quot;,
+      &quot;type&quot;: &quot;Platinum/Gold/Silver&quot;,
+      &quot;website&quot;: &quot;http://sponsor_url&quot;,
+      &quot;logo&quot;: &quot;http://sponsor_logo.jpg&quot;,
+      &quot;about&quot;: &quot;details of sponsor&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Sponsor Name&quot;,
+      &quot;type&quot;: &quot;Platinum/Gold/Silver&quot;,
+      &quot;website&quot;: &quot;http://sponsor_url&quot;,
+      &quot;logo&quot;: &quot;http://sponsor_logo.jpg&quot;,
+      &quot;about&quot;: &quot;details of sponsor&quot;
+    }
+  ]
+}
+</code></pre>
+      </body>
+    </html>

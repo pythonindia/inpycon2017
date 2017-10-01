@@ -1,0 +1,104 @@
+{
+	"0.0.1": [{
+		"00": {
+			"title": "Registration",
+			"description": "Register yourselves and get your goodie bag. Have a great day!",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"01": {
+			"title": "Tea",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"02": {
+			"title": "Talk 1",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"03": {
+			"title": "Talk 2",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"04": {
+			"title": "Talk 3",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"05": {
+			"title": "Talk 4",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"06": {
+			"title": "Workshop 1",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"07": {
+			"title": "Workshop 2",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"08": {
+			"title": "Workshop 3",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		},
+		"09": {
+			"title": "Workshop 4",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "",
+				"info": "",
+				"photo": ""
+			}
+		}
+	}]
+}
