@@ -358,11 +358,13 @@ jQuery(document).on('ready', function() {
                    ["thirteen", "fourteen", "fifteen", "sixteen"]];
 
   function updateSchedule() {
-      updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
+      /* Uncomment these lines to make schedule work */
+      /* updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
       updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
       updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
       updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
       updateTrackHall(track_halls, '.track-hall');
+      */
   }
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
