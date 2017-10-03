@@ -6,4 +6,4 @@ if __name__ == "__main__":
         ('index.html', {})
 	])
     # enable automatic reloading
-    site.render(use_reloader=True)
+    site.render(use_reloader=False)
