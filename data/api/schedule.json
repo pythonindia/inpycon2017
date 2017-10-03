@@ -1,0 +1,183 @@
+{
+  "0.0.1": [
+    {
+      "tracks": ["Main Audi", "Seminar Main 1", "Seminar Hall 2", "Seminar Hall 3"],
+      "2017-10-02": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "01",
+          "title": "Tea",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Workshop 1",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "07",
+          "title": "Workshop 2",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "08",
+          "title": "Workshop 3",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "09",
+          "title": "Workshop 4",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "4"
+        }
+      ],
+      "2017-10-03": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "01",
+          "title": "Tea",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "all"
+        },
+        {
+          "talk_id": "06",
+          "title": "Workshop 1",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "07",
+          "title": "Workshop 2",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "08",
+          "title": "Workshop 3",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "09",
+          "title": "Workshop 4",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "4"
+        }
+      ],
+      "2017-10-04": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "01",
+          "title": "Tea",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "all"
+        },
+        {
+          "talk_id": "02",
+          "title": "Talk 1",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "03",
+          "title": "Talk 2",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "04",
+          "title": "Talk 3",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "05",
+          "title": "Talk 4",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "4"
+        }
+      ],
+      "2017-10-05": [
+        {
+          "talk_id": "00",
+          "title": "Registration",
+          "start_time": "08:00",
+          "end_time": "09:00",
+          "track": "all"
+        },
+        {
+          "talk_id": "01",
+          "title": "Tea",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "all"
+        },
+        {
+          "talk_id": "02",
+          "title": "Talk 1",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "1"
+        },
+        {
+          "talk_id": "03",
+          "title": "Talk 2",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "2"
+        },
+        {
+          "talk_id": "04",
+          "title": "Talk 3",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "3"
+        },
+        {
+          "talk_id": "05",
+          "title": "Talk 4",
+          "start_time": "09:00",
+          "end_time": "09:30",
+          "track": "4"
+        }
+      ]
+    }
+  ]
+}
