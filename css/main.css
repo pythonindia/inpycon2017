@@ -1181,7 +1181,7 @@ li.tg-rss a{background:#ff6600;}
 .tg-homeslider .owl-stage-outer,
 .tg-homeslider .owl-stage{height:100%;}
 .tg-homeslider .owl-item{
-  height:100%;
+  height:100vh;
   position:relative;
 }
 .tg-homeslider .owl-nav{display:none;}
