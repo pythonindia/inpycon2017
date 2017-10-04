@@ -352,22 +352,22 @@ jQuery(document).on('ready', function() {
   var day_2_schedule = schedule[DATE_TWO];
   var day_3_schedule = schedule[DATE_THREE];
   var day_4_schedule = schedule[DATE_FOUR];
-  var row_names = [["one", "two", "three", "four"],
-                   ["five", "six", "seven", "eight"],
-                   ["nine", "ten", "eleven", "twelve"],
-                   ["thirteen", "fourteen", "fifteen", "sixteen"]];
+  var row_names = [["one", "two", "three", "four", "five"],
+                   ["six", "seven", "eight", "nine", "ten"],
+                   ["eleven", "twelve", "thirteen", "fourteen", "fifteen", ],
+                   ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
 
   function updateSchedule() {
       /* Uncomment these lines to make schedule work */
-      /* updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
+      updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
       updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
       updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
       updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
-      updateTrackHall(track_halls, '.track-hall'); */
+      updateTrackHall(track_halls, '.track-hall');
   }
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
-      var schedule_rows = [[], [], [], []];
+      var schedule_rows = [[], [], [], [], []];
       for (var i = 0; i < schedule.length; i++) {
           var talk_id = schedule[i].talk_id;
           var entity_details = schedule[i];
@@ -382,6 +382,7 @@ jQuery(document).on('ready', function() {
             schedule_rows[1].push([time_duration, display_title, speaker_name]);
             schedule_rows[2].push([time_duration, display_title, speaker_name]);
             schedule_rows[3].push([time_duration, display_title, speaker_name]);
+            schedule_rows[4].push([time_duration, display_title, speaker_name]);
           }
           else if (current_day_track == '1') {
               schedule_rows[0].push([time_duration, display_title, speaker_name]);
@@ -389,8 +390,10 @@ jQuery(document).on('ready', function() {
               schedule_rows[1].push([time_duration, display_title, speaker_name]);
           } else if (current_day_track == '3') {
               schedule_rows[2].push([time_duration, display_title, speaker_name]);
+          } else if (current_day_track == '4') {
+              schedule_rows[3].push([time_duration, display_title, speaker_name]);
           } else {
-            schedule_rows[3].push([time_duration, display_title, speaker_name]);
+              schedule_rows[4].push([time_duration, display_title, speaker_name]);
           }
       }
       insertTableRows(table_body, schedule_rows, row_names);
@@ -402,7 +405,50 @@ jQuery(document).on('ready', function() {
     $(rows).each(function() {
       var row = $(this);
       row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane" id="hall-'+ row_names[row_no] +'">';
-      $(row).each(function() {
+      if (row_names[row_no] == "fifteen" || row_names[row_no] == "twenty") {
+        row_html += `
+      <div class="tg-event">
+        <div class="tg-eventspeaker">
+          <div class="tg-contentbox">
+            <div class="tg-eventhead">
+            <div class="tg-leftarea">
+              <time datetime="2017-12-12">08:00 - 09:00</time>
+              <div class="tg-title">
+                <h2>Registration</h2>
+              </div>
+            </div>
+            <!--<div class="tg-rightarea">
+              <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
+            </div>-->
+          </div>
+            <div class="tg-speakername">
+              <h2> </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tg-event">
+        <div class="tg-eventspeaker">
+          <div class="tg-contentbox">
+            <div class="tg-eventhead">
+            <div class="tg-leftarea">
+              <time datetime="2017-12-12">09:30 - 17:30</time>
+              <div class="tg-title">
+                <h2>Child Care</h2>
+              </div>
+            </div>
+            <!--<div class="tg-rightarea">
+              <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
+            </div-->
+          </div>
+            <div class="tg-speakername">
+              <h2> </h2>
+            </div>
+          </div>
+        </div>
+      </div>`
+      } else {
+        $(row).each(function() {
           var nrow = $(this);
           row_html += `<div class="tg-event">
                         <div class="tg-eventspeaker">
@@ -414,9 +460,9 @@ jQuery(document).on('ready', function() {
                                 <h2>`+ nrow[1] +`</h2>
                               </div>
                             </div>
-                            <div class="tg-rightarea">
+                            <!--<div class="tg-rightarea">
                               <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
-                            </div>
+                            </div>-->
                           </div>
                             <div class="tg-speakername">
                               <h2>`+ nrow[2] +`</h2>
@@ -425,6 +471,7 @@ jQuery(document).on('ready', function() {
                         </div>
                       </div>` 
         });
+      }
       row_html += '</div>';
       row_no += 1;
       });
