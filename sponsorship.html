@@ -64,9 +64,10 @@
             </div>
             <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
               <ul>
-                <li><a href="https://in.pycon.org/2016/">2016</a></li>
-                <li><a href="sponsorship.html">Sponsorship</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="sponsorship.html">Sponsorship</a></li>
                 <li><a href="https://in.pycon.org/blog/">Blog</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li class="menu-item-has-children">
@@ -181,6 +182,34 @@
     <script src="js/vendor/jquery-library.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
+    <script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".navbar", offset: 50});   
+
+      // Add smooth scrolling on all links inside the navbar
+      $("#tg-navigation a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
     <script src="js/customScrollbar.min.js"></script>
     <script src="js/packery.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
