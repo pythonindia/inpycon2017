@@ -289,7 +289,7 @@
         },
         {
           "talk_id": "33",
-          "title": "Empowering African students with Python",
+          "title": "Creating Cross Connectivity for Scalability - Hybrid Apps",
           "start_time": "14:45",
           "end_time": "15:30",
           "track": "2"
@@ -310,14 +310,14 @@
         },
         {
           "talk_id": "35",
-          "title": "How to Boost your Tensorflow model inference performance using Asyncio",
+          "title": "How to Boost your Tensorflow model inference performance using Asyncio.",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "1"
         },
         {
           "talk_id": "36",
-          "title": "A little bot for empowering teams",
+          "title": "Self-Healing Code: A Journey Thriugh Auto-Remediation",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "2"
@@ -389,7 +389,7 @@
         },
         {
           "talk_id": "43",
-          "title": "Django in the real world",
+          "title": "Spinning local DNS server sourcing responses over HTTPS to combat Man-in-the-middle attack",
           "start_time": "10:45",
           "end_time": "11:30",
           "track": "3"
@@ -466,7 +466,7 @@
         },
         {
           "talk_id": "51",
-          "title": "Scalable Big Data solutions using Lambda Architecture",
+          "title": "OLMONK : Data Validation Package",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "1"
@@ -480,13 +480,20 @@
         },
         {
           "talk_id": "53",
-          "title": "Security lessons learned from building serverless systems",
+          "title": "Clean Architecture Applications in Python",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "3"
         },
         {
           "talk_id": "54",
+          "title": "Sponsored Workshop/Talks 4",
+          "start_time": "10:45",
+          "end_time": "16:35",
+          "track":"4"
+        },
+        {
+          "talk_id": "55",
           "title": "Closing Ceremony",
           "start_time": "16:45",
           "end_time": "17:30",
