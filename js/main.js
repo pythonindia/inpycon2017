@@ -2,13 +2,13 @@
     CUSTOM FUNCTION WRITE HERE
 -------------------------------------- */
 "use strict";
-jQuery(document).on('ready', function () {
+jQuery(document).on('ready', function() {
   /* -------------------------------------
       COLLAPSE MENU SMALL DEVICES
   -------------------------------------- */
-  function collapseMenu() {
+  function collapseMenu(){
     jQuery('.menu-item-has-children').prepend('<span class="tg-dropdowarrow"><i class="icon-chevron-down"></i></span>');
-    jQuery('.menu-item-has-children span').on('click', function () {
+    jQuery('.menu-item-has-children span').on('click', function() {
       jQuery(this).next().next().slideToggle(300);
       jQuery('.icon-chevron-down').toggleClass('icon-chevron-up');
       jQuery(this).parent('.menu-item-has-children').toggleClass('tg-open');
@@ -41,7 +41,7 @@ jQuery(document).on('ready', function () {
       SECTION SCROLL
   -------------------------------------- */
   var _tg_btnsectionscroll = jQuery('.tg-btnsectionscroll');
-  _tg_btnsectionscroll.on('click', function (event) {
+  _tg_btnsectionscroll.on('click', function(event) {
     event.preventDefault();
     console.log('clicked');
     var offset = 2;
@@ -53,7 +53,7 @@ jQuery(document).on('ready', function () {
       NEXT EVENT COUNTER
   -------------------------------------- */
   var _tg_upcomingeventcounter = jQuery('.tg-upcomingeventcounter');
-  _tg_upcomingeventcounter.countdown('2017/11/4', function (event) {
+  _tg_upcomingeventcounter.countdown('2017/11/4', function(event) {
     var $this = jQuery(this).html(event.strftime(''
       + '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span> Days</span><span>%-D</span></div></div>'
       + '<div class="tg-eventcounterholder"><div class="tg-eventcounter"><span>Hours</span><span>%H</span></div></div>'
@@ -109,7 +109,7 @@ jQuery(document).on('ready', function () {
       $optionLinks.on('click', function () {
         var $this = jQuery(this);
         var selector = $this.attr('data-filter');
-        $container.isotope({ itemSelector: '.tg-masonrygrid', filter: selector });
+        $container.isotope({itemSelector: '.tg-masonrygrid', filter: selector});
         if (!$this.hasClass('tg-active')) {
           var $optionSet = $this.parents('.tg-optionset');
           $optionSet.find('.tg-active').removeClass('tg-active');
@@ -150,7 +150,7 @@ jQuery(document).on('ready', function () {
   jQuery(function () {
     jQuery('.tg-gallery').each(function () {
       jQuery(this).hoverdir({
-        hoverDelay: 75,
+        hoverDelay : 75,
       });
     });
   });
@@ -160,8 +160,8 @@ jQuery(document).on('ready', function () {
   function themeAccordion() {
     jQuery('.tg-panelcontent').hide();
     jQuery('.tg-accordion h4:first').addClass('active').next().slideDown('slow');
-    jQuery('.tg-accordion h4').on('click', function () {
-      if (jQuery(this).next().is(':hidden')) {
+    jQuery('.tg-accordion h4').on('click',function() {
+      if(jQuery(this).next().is(':hidden')) {
         jQuery('.tg-accordion h4').removeClass('active').next().slideUp('slow');
         jQuery(this).toggleClass('active').next().slideDown('slow');
       }
@@ -173,7 +173,7 @@ jQuery(document).on('ready', function () {
   -------------------------------------- */
   var _tg_themescrollbar = jQuery(".tg-themescrollbar");
   _tg_themescrollbar.mCustomScrollbar({
-    axis: "y",
+    axis:"y",
   });
   /* -------------------------------------
       Google Map
@@ -219,23 +219,23 @@ jQuery(document).on('ready', function () {
     dots: false,
     nav: false,
     autoplay: true,
-    margin: 30,
-    responsiveClass: true,
-    responsive: {
-      320: {
-        items: 1,
+    margin:30,
+    responsiveClass:true,
+    responsive:{
+      320:{
+        items:1,
       },
-      568: {
-        items: 2,
+      568:{
+        items:2,
       },
-      768: {
-        items: 2,
+      768:{
+        items:2,
       },
-      992: {
-        items: 2,
+      992:{
+        items:2,
       },
-      1200: {
-        items: 3,
+      1200:{
+        items:3,
       }
     }
   });
@@ -250,7 +250,7 @@ jQuery(document).on('ready', function () {
     dots: true,
     nav: false,
     margin: 30,
-    responsiveClass: true,
+    responsiveClass:true,
     navText: [
       '<i class="icon-chevron-left"></i>',
       '<i class="icon-chevron-right"></i>',
@@ -259,31 +259,31 @@ jQuery(document).on('ready', function () {
       'tg-btnroundprev',
       'tg-btnroundnext'
     ],
-    responsive: {
-      0: {
-        items: 1,
+    responsive:{
+      0:{
+        items:1,
       },
-      569: {
-        items: 2,
+      569:{
+        items:2,
       },
-      768: {
-        items: 2,
+      768:{
+        items:2,
       },
-      992: {
-        items: 3,
+      992:{
+        items:3,
       },
-      1200: {
-        items: 2,
+      1200:{
+        items:2,
       },
-      1440: {
-        items: 3,
+      1440:{
+        items:3,
       }
     }
   });
   /* -------------------------------------
       CHATBOX TOGGLE
   -------------------------------------- */
-  jQuery('#tg-btnclosechat, #tg-getsupport').on('click', function () {
+  jQuery('#tg-btnclosechat, #tg-getsupport').on('click', function(){
     jQuery('#tg-chatbox').slideToggle();
   });
   /* -------------------------------------
@@ -299,7 +299,7 @@ jQuery(document).on('ready', function () {
   /* -------------------------------------
       PACKAGE SELECT
   -------------------------------------- */
-  jQuery('.tg-selectplan, .tg-btnformpkghide').on('click', function (event) {
+  jQuery('.tg-selectplan, .tg-btnformpkghide').on('click', function(event){
     event.preventDefault();
     jQuery(this).parents('.tg-package').toggleClass('tg-formshow');
   });
@@ -307,12 +307,12 @@ jQuery(document).on('ready', function () {
       ALERT POPUP
   -------------------------------------- */
   jQuery('body').addClass('tg-showpopup');
-  jQuery('.close').on('click', function () {
+  jQuery('.close').on('click', function(){
     jQuery('body').removeClass('tg-showpopup');
   });
 
   /*---------------------------------------
-    SCEHDULE SECTION
+    SCHEDULE SECTION
   ---------------------------------------*/
 
   function getScheduleAndTracks() {
@@ -320,24 +320,24 @@ jQuery(document).on('ready', function () {
     tracks = {};
 
     $.ajax({
-      url: "/data/api/schedule.json",// use this for testing
-      // url: "https://in.pycon.org/2017/data/api/schedule.json",
-      async: false,
-      success: function (response) {
-        schedule = response;
+      //url: "/data/api/schedule.json", use this for testing
+      url: "https://in.pycon.org/2017/data/api/schedule.json",
+      async:false,
+      success: function(response) {
+      schedule = response;
       },
     });
 
     $.ajax({
-      url: "/data/api/tracks.json", // use this for testing
-      // url: "https://in.pycon.org/2017/data/api/tracks.json",
-      async: false,
-      success: function (response) {
-        tracks = response;
+      // url: "/data/api/tracks.json", // use this for testing
+      url: "https://in.pycon.org/2017/data/api/tracks.json",
+      async:false,
+      success: function(response) {
+      tracks = response;
       },
     });
 
-    return { schedule: schedule, tracks: tracks };
+    return {schedule: schedule, tracks: tracks};
   }
 
   var talk_count = 0;
@@ -355,9 +355,9 @@ jQuery(document).on('ready', function () {
   var day_3_schedule = schedule[DATE_THREE];
   var day_4_schedule = schedule[DATE_FOUR];
   var row_names = [["one", "two", "three", "four", "five"],
-  ["six", "seven", "eight", "nine", "ten"],
-  ["eleven", "twelve", "thirteen", "fourteen", "fifteen",],
-  ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
+                   ["six", "seven", "eight", "nine", "ten"],
+                   ["eleven", "twelve", "thirteen", "fourteen", "fifteen", ],
+                   ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
 
   function updateSchedule() {
     /* Uncomment these lines to make schedule work */
@@ -409,9 +409,9 @@ jQuery(document).on('ready', function () {
   function insertTableRows(table, rows, row_names) {
     var row_html = '';
     var row_no = 0;
-    $(rows).each(function () {
+    $(rows).each(function() {
       var row = $(this);
-      row_html += (row_no == 0) ? '<div role="tabpanel" class="tab-pane active" id="hall-' + row_names[row_no] + '">' : '<div role="tabpanel" class="tab-pane" id="hall-' + row_names[row_no] + '">';
+      row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane" id="hall-'+ row_names[row_no] +'">';
       if (row_names[row_no] == "fifteen" || row_names[row_no] == "twenty") {
         row_html += `
       <div class="tg-event">
@@ -455,7 +455,7 @@ jQuery(document).on('ready', function () {
         </div>
       </div>`
       } else {
-        $(row).each(function () {
+        $(row).each(function() {
           var nrow = $(this);
           row_html += `<div class="tg-event">
                         <div class="tg-eventspeaker">
@@ -476,9 +476,8 @@ jQuery(document).on('ready', function () {
                               <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
                             </div>-->
                           </div>
-             
                             <div class="tg-speakername">
-                              <h2>`+ nrow[2] + `</h2>
+                              <h2>`+ nrow[2] +`</h2>
                             </div>
                           </div>
                         </div>
@@ -487,14 +486,14 @@ jQuery(document).on('ready', function () {
       }
       row_html += '</div>';
       row_no += 1;
-    });
+      });
     $(table).append(row_html);
   }
 
   function updateTrackHall(track_halls, selector) {
-    track_halls.forEach(function (element, index) {
-      $($(selector)[index]).html(element);
-    });
+      track_halls.forEach(function(element, index) {
+          $($(selector)[index]).html(element);
+      });
   }
 
   updateSchedule();
@@ -507,7 +506,5 @@ TALK DESCRIPTION TOGGLE SECTION
 function addToggleDescriptionListener() {
   $('.tg-contentbox').on("click", function (event) {
     $(this).find('.tg-description').slideToggle();
-
-    // $('#desc' + $(this).data('id')).slideToggle();
   });
 }
