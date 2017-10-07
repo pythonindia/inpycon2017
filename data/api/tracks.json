@@ -1,554 +1,555 @@
 {
-	"0.0.1": [{
-		"00": {
-			"title": "Registration",
-			"description": "Register yourselves and get your goodie bag. Have a great day!",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"01": {
-			"title": "Deep Learning for NLP from Scratch",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"02": {
-			"title": "Concurrency in Python 3.0 - Writing concurrent and parallel programs in Python",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"03": {
-			"title": "Computer aided algebra system (CAS) for different programming languages using SymEngine and SymPy",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"04": {
-			"title": "Dev Sprints",
-			"description": "",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"05": {
-			"title": "Python for Data Analysis",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"06": {
-			"title": "Lunch",
-			"description": "",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"07": {
-			"title": "Topic Modeling With Python",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"08": {
-			"title": "Creating Captive Portal with Tornado and Raspberry Pi",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"09": {
-			"title": "Complex network analysis using NetworkX - Graph Theory in Python",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"10": {
-			"title": "Kubernetes 101",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"11": {
-			"title": "Effectively Debugging Deep Neural Networks",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"12": {
-			"title": "Walkthrough cpython 3.6 source code",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"13": {
-			"title": "Binary Analysis and Exploitation using Python",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"14": {
-			"title": "Pyspark - Big Data applications using Python and Spark",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"15": {
-			"title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"16": {
-			"title": "Python packages",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"17": {
-			"title": "Creation of Telegram bots with Python",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"18": {
-			"title": "Applying Transfer Learning on Your Data",
-			"description": "",
-			"type": "workshop",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"19": {
-			"title": "Keynote 1",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"20": {
-			"title": "Child Care",
-			"description": "",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"21": {
-			"title": "Tea",
-			"description": "",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"22": {
-			"title": "Visualizing machine learning algorithms in Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"23": {
-			"title": "Deploying Production ready Kubernetes clusters - Lessons Learnt",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"24": {
-			"title": "HTTP Bottom Up - Live!",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"25": {
-			"title": "Sponsored Workshop/Talks 1",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"26": {
-			"title": "Liberating tabular data from the clutches of PDFs",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"27": {
-			"title": "Reducing dead code ratio of your project with vulture",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"28": {
-			"title": "Building microservices with firefly",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"29": {
-			"title": "Panel Discussion 1",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"30": {
-			"title": "Lightning Talks",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"31": {
-			"title": "Sponsored Workshop/Talks 2",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"32": {
-			"title": "Keytopic extraction and contextual sentiment analysis",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"33": {
-			"title": "Empowering African students with Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"34": {
-			"title": "Building single page javascript apps with Django, Graphql, Relay and React!",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"35": {
-			"title": "How to Boost your Tensorflow model inference performance using Asyncio",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"36": {
-			"title": "A little bot for empowering teams",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"37": {
-			"title": "Boosting Python Web Applications with Protocol Buffers and GRPC",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"38": {
-			"title": "Keynote 2",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"39": {
-			"title": "Keynote 3",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"40": {
-			"title": "Sponsored Workshop/Talks 3",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"41": {
-			"title": "Geospatial data science and analysis using ArcGIS API for Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"42": {
-			"title": "Getting Started with Embedded Python: MicroPython and CircuitPython",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"43": {
-			"title": "Django in the real world",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"44": {
-			"title": "Scientific computing using Cython: Best of both worlds!",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"45": {
-			"title": "How import works in Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"46": {
-			"title": "Using Python and microservices to fuel WebPush at Mozilla",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"47": {
-			"title": "Panel Discussion 2",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"48": {
-			"title": "Visualising the world of competitive programming with Python (Codeforces)",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"49": {
-			"title": "How is __metaclass__ used in real life",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"50": {
-			"title": "Django on Steroids - Building Applications at Web Scale",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"51": {
-			"title": "Scalable Big Data solutions using Lambda Architecture",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"52": {
-			"title": "PyBeacon: Eddystone Protocol implementation in Python",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"53": {
-			"title": "Security lessons learned from building serverless systems",
-			"description": "",
-			"type": "talk",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		},
-		"54": {
-			"title": "Closing Ceremony",
-			"description": "",
-			"type": "default",
-			"speaker": {
-				"name": "",
-				"info": "",
-				"photo": ""
-			}
-		}
-	]
+	"0.0.1": [
+      {
+        "00": {
+          "title": "Registration",
+          "description": "Register yourselves and get your goodie bag. Have a great day!",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "01": {
+          "title": "Deep Learning for NLP from Scratch",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "02": {
+          "title": "Concurrency in Python 3.0 - Writing concurrent and parallel programs in Python",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "03": {
+          "title": "Computer aided algebra system (CAS) for different programming languages using SymEngine and SymPy",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "04": {
+          "title": "Dev Sprints",
+          "description": "",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "05": {
+          "title": "Python for Data Analysis",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "06": {
+          "title": "Lunch",
+          "description": "",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "07": {
+          "title": "Topic Modeling With Python",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "08": {
+          "title": "Creating Captive Portal with Tornado and Raspberry Pi",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "09": {
+          "title": "Complex network analysis using NetworkX - Graph Theory in Python",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "10": {
+          "title": "Kubernetes 101",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "11": {
+          "title": "Effectively Debugging Deep Neural Networks",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "12": {
+          "title": "Walkthrough cpython 3.6 source code",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "13": {
+          "title": "Binary Analysis and Exploitation using Python",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "14": {
+          "title": "Pyspark - Big Data applications using Python and Spark",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "15": {
+          "title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "16": {
+          "title": "Python packages",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "17": {
+          "title": "Creation of Telegram bots with Python",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "18": {
+          "title": "Applying Transfer Learning on Your Data",
+          "description": "",
+          "type": "workshop",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "19": {
+          "title": "Keynote 1",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "20": {
+          "title": "Child Care",
+          "description": "",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "21": {
+          "title": "Tea",
+          "description": "",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "22": {
+          "title": "Visualizing machine learning algorithms in Python",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "23": {
+          "title": "Deploying Production ready Kubernetes clusters - Lessons Learnt",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "24": {
+          "title": "HTTP Bottom Up - Live!",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "25": {
+          "title": "Sponsored Workshop/Talks 1",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "26": {
+          "title": "Liberating tabular data from the clutches of PDFs",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "27": {
+          "title": "Reducing dead code ratio of your project with vulture",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "28": {
+          "title": "Building microservices with firefly",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "29": {
+          "title": "Panel Discussion 1",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "30": {
+          "title": "Lightning Talks",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "31": {
+          "title": "Sponsored Workshop/Talks 2",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "32": {
+          "title": "Keytopic extraction and contextual sentiment analysis",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "33": {
+          "title": "Empowering African students with Python",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "34": {
+          "title": "Building single page javascript apps with Django, Graphql, Relay and React!",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "35": {
+          "title": "How to Boost your Tensorflow model inference performance using Asyncio",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "36": {
+          "title": "A little bot for empowering teams",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "37": {
+          "title": "Boosting Python Web Applications with Protocol Buffers and GRPC",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "38": {
+          "title": "Keynote 2",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "39": {
+          "title": "Keynote 3",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "40": {
+          "title": "Sponsored Workshop/Talks 3",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "41": {
+          "title": "Geospatial data science and analysis using ArcGIS API for Python",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "42": {
+          "title": "Getting Started with Embedded Python: MicroPython and CircuitPython",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "43": {
+          "title": "Django in the real world",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "44": {
+          "title": "Scientific computing using Cython: Best of both worlds!",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "45": {
+          "title": "How import works in Python",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "46": {
+          "title": "Using Python and microservices to fuel WebPush at Mozilla",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "47": {
+          "title": "Panel Discussion 2",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "48": {
+          "title": "Visualising the world of competitive programming with Python (Codeforces)",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "49": {
+          "title": "How is __metaclass__ used in real life",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "50": {
+          "title": "Django on Steroids - Building Applications at Web Scale",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "51": {
+          "title": "Scalable Big Data solutions using Lambda Architecture",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "52": {
+          "title": "PyBeacon: Eddystone Protocol implementation in Python",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "53": {
+          "title": "Security lessons learned from building serverless systems",
+          "description": "",
+          "type": "talk",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        },
+        "54": {
+          "title": "Closing Ceremony",
+          "description": "",
+          "type": "default",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "photo": ""
+          }
+        }
+      }]
 }
