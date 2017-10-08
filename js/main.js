@@ -312,7 +312,7 @@ jQuery(document).on('ready', function() {
   });
 
   /*---------------------------------------
-    SCEHDULE SECTION
+    SCHEDULE SECTION
   ---------------------------------------*/
 
   function getScheduleAndTracks() {
@@ -320,7 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      //url: "../data/api/schedule.json", use this for testing
+      //url: "/data/api/schedule.json", use this for testing
       url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
@@ -329,7 +329,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      //url: "../data/api/tracks.json", use this for testing
+      // url: "/data/api/tracks.json", // use this for testing
       url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
@@ -349,7 +349,7 @@ jQuery(document).on('ready', function() {
   var response = getScheduleAndTracks();
   var schedule = response.schedule[API_VERSION][0];
   var track_halls = response.schedule[API_VERSION][0]["tracks"];
-  var tracks = response.tracks[API_VERSION][0]; 
+  var tracks = response.tracks[API_VERSION][0];
   var day_1_schedule = schedule[DATE_ONE];
   var day_2_schedule = schedule[DATE_TWO];
   var day_3_schedule = schedule[DATE_THREE];
@@ -360,45 +360,50 @@ jQuery(document).on('ready', function() {
                    ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
 
   function updateSchedule() {
-      /* Uncomment these lines to make schedule work */
-      updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
-      updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
-      updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
-      updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
-      updateTrackHall(track_halls, '.track-hall');
+    /* Uncomment these lines to make schedule work */
+    updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
+    updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
+    updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
+    updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
+    updateTrackHall(track_halls, '.track-hall');
+    addToggleDescriptionListener();
   }
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
-      var schedule_rows = [[], [], [], [], []];
-      for (var i = 0; i < schedule.length; i++) {
-          var talk_id = schedule[i].talk_id;
-          var entity_details = schedule[i];
-          var title = entity_details.title;
-          var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
-          var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
-          var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
-          var current_day_track = schedule[i].track;
+    var schedule_rows = [[], [], [], [], []];
+    for (var i = 0; i < schedule.length; i++) {
+      var talk_id = schedule[i].talk_id;
+      var entity_details = schedule[i];
+      var title = entity_details.title;
+      var description = tracks[talk_id].description;
+      var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
+      var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
+      var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
+      var current_day_track = schedule[i].track;
 
-          if (current_day_track == 'all' || typeof current_day_track == "undefined") {
-            schedule_rows[0].push([time_duration, display_title, speaker_name]);
-            schedule_rows[1].push([time_duration, display_title, speaker_name]);
-            schedule_rows[2].push([time_duration, display_title, speaker_name]);
-            schedule_rows[3].push([time_duration, display_title, speaker_name]);
-            schedule_rows[4].push([time_duration, display_title, speaker_name]);
-          }
-          else if (current_day_track == '1') {
-              schedule_rows[0].push([time_duration, display_title, speaker_name]);
-          } else if (current_day_track == '2') {
-              schedule_rows[1].push([time_duration, display_title, speaker_name]);
-          } else if (current_day_track == '3') {
-              schedule_rows[2].push([time_duration, display_title, speaker_name]);
-          } else if (current_day_track == '4') {
-              schedule_rows[3].push([time_duration, display_title, speaker_name]);
-          } else {
-              schedule_rows[4].push([time_duration, display_title, speaker_name]);
-          }
+      var each_row = [time_duration, display_title, speaker_name, description, talk_id];
+
+      if (current_day_track == 'all' || typeof current_day_track == "undefined") {
+        schedule_rows[0].push(each_row);
+        schedule_rows[1].push(each_row);
+        schedule_rows[2].push(each_row);
+        schedule_rows[3].push(each_row);
+        schedule_rows[4].push(each_row);
       }
-      insertTableRows(table_body, schedule_rows, row_names);
+      else if (current_day_track == '1') {
+
+        schedule_rows[0].push(each_row);
+      } else if (current_day_track == '2') {
+        schedule_rows[1].push(each_row);
+      } else if (current_day_track == '3') {
+        schedule_rows[2].push(each_row);
+      } else if (current_day_track == '4') {
+        schedule_rows[3].push(each_row);
+      } else {
+        schedule_rows[4].push(each_row);
+      }
+    }
+    insertTableRows(table_body, schedule_rows, row_names);
   }
 
   function insertTableRows(table, rows, row_names) {
@@ -457,10 +462,15 @@ jQuery(document).on('ready', function() {
                           <div class="tg-contentbox">
                             <div class="tg-eventhead">
                             <div class="tg-leftarea">
-                              <time datetime="2017-12-12">`+ nrow[0] +`</time>
-                              <div class="tg-title">
-                                <h2>`+ nrow[1] +`</h2>
-                              </div>
+                              <time datetime="2017-12-12">`+ nrow[0] + `</time>
+                              <div class="tg-title talk_id "  data-id='talk` + nrow[4] + `' >
+                              <h2>` + nrow[1] + `</h2>
+                            </div>
+                            
+                            <div class="tg-description" id='desc` + nrow[4] + `'>
+                             ` + nrow[3] + `
+                             
+                            </div> 
                             </div>
                             <!--<div class="tg-rightarea">
                               <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
@@ -471,7 +481,7 @@ jQuery(document).on('ready', function() {
                             </div>
                           </div>
                         </div>
-                      </div>` 
+                      </div>`
         });
       }
       row_html += '</div>';
@@ -489,3 +499,12 @@ jQuery(document).on('ready', function() {
   updateSchedule();
 
 });
+
+/*---------------------------------------
+TALK DESCRIPTION TOGGLE SECTION
+---------------------------------------*/
+function addToggleDescriptionListener() {
+  $('.tg-contentbox').on("click", function (event) {
+    $(this).find('.tg-description').slideToggle();
+  });
+}
