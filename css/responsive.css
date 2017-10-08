@@ -40,7 +40,7 @@
 		font-size: 40px;
 		line-height: 35px;
 	}
-	
+
 	.tg-tagsshare .tg-tags{
 		width:100%;
 		padding:0 0 20px;
@@ -135,7 +135,6 @@
 	.tg-bannerholdervthree .tg-bannerimg figcaption {height: 500px;}
 	.tg-bannerholdervthree .tg-slidercontent {padding: 35px 20px;}
 	.tg-upcomingeventcounter {padding: 0;}
-	.tg-bannerimg figcaption {height: 830px;}
 	.tg-date {padding: 20px 10px;}
 	.tg-date h3 {
 		font-size: 25px;
@@ -384,7 +383,6 @@
 	}
 }
 @media (max-width:900px){
-	.tg-bannerimg figcaption {height: 750px;}
 	.tg-slidercontent h1 {
 		font-size: 50px;
 		line-height: 50px;
@@ -480,7 +478,6 @@
 		font-size: 25px;
 		line-height: 25px;
 	}
-	.tg-bannerimg figcaption {height: 700px;}
 	.tg-eventcounter span:last-child {
 		right: -5px;
 		bottom: -10px;
@@ -503,7 +500,6 @@
 		font-size:12px;
 		line-height: 22px;
 	}
-	.tg-bannerimg figcaption {height: 570px;}
 	.tg-slidercontent > span {
 		font-size: 20px;
 		line-height: 20px;
@@ -837,7 +833,6 @@
 	.tg-bannersocialicons{left:20px;}
 	.tg-homeslider .owl-dots{right:20px;}
 	.tg-upcomingeventcounter {padding: 0 40px;}
-	.tg-bannerimg figcaption {height: 730px;}
 	.tg-eventcounterholder{
 		width:50%;
 		padding:10px;
@@ -1038,4 +1033,3 @@
 	}
 	.tg-headervfour .tg-navigationarea .tg-btnbookseat{float:left;}
 }
-@media (max-width:320px){}
