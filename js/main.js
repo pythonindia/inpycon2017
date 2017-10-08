@@ -320,7 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      //url: "/data/api/schedule.json", use this for testing
+      //url: "/data/api/schedule.json", //use this for testing
       url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
@@ -329,7 +329,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      // url: "/data/api/tracks.json", // use this for testing
+      //url: "/data/api/tracks.json", // use this for testing
       url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
@@ -375,7 +375,7 @@ jQuery(document).on('ready', function() {
       var talk_id = schedule[i].talk_id;
       var entity_details = schedule[i];
       var title = entity_details.title;
-      var description = tracks[talk_id].description;
+      var description = markdownit({breaks:true}).render(tracks[talk_id].description.replace(/\\n/g,"\n"));
       var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
       var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
       var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
