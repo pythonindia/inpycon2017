@@ -12,7 +12,7 @@
         },
         {
           "talk_id": "01",
-          "title": "Deep Learning for NLP from Scratch",
+          "title": "Effectively Debugging Deep Neural Networks",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -32,15 +32,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "05",
+          "title": "Python for Data Analysis",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "4"
         },
         {
-          "talk_id": "05",
-          "title": "Python for Data Analysis",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "5"
@@ -54,7 +54,7 @@
         },
         {
           "talk_id": "07",
-          "title": "Topic Modeling With Python",
+          "title": "Making Machine Learning Fruitful and Fun using Orange",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "1"
@@ -74,15 +74,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "10",
+          "title": "Kubernetes 101",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "4"
         },
         {
-          "talk_id": "10",
-          "title": "Kubernetes 101",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "5"
@@ -98,7 +98,7 @@
         },
         {
           "talk_id": "11",
-          "title": "Effectively Debugging Deep Neural Networks",
+          "title": "Introduction to Bokeh",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -118,15 +118,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "14",
+          "title": "Pyspark - Big Data applications using Python and Spark",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "4"
         },
         {
-          "talk_id": "14",
-          "title": "Pyspark - Big Data applications using Python and Spark",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "5"
@@ -154,21 +154,21 @@
         },
         {
           "talk_id": "17",
-          "title": "Creation of Telegram bots with Python",
+          "title": "Deep Learning for NLP from Scratch",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "18",
+          "title": "Applying Transfer Learning on Your Data",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "4"
         },
         {
-          "talk_id": "18",
-          "title": "Applying Transfer Learning on Your Data",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "5"

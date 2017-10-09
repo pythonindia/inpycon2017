@@ -320,7 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      //url: "/data/api/schedule.json", //use this for testing
+      //url: "./data/api/schedule.json", //use this for testing
       url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
@@ -329,7 +329,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      //url: "/data/api/tracks.json", // use this for testing
+      //url: "./data/api/tracks.json", // use this for testing
       url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
@@ -360,7 +360,6 @@ jQuery(document).on('ready', function() {
                    ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
 
   function updateSchedule() {
-    /* Uncomment these lines to make schedule work */
     updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
     updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
     updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
