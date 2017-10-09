@@ -374,11 +374,10 @@ jQuery(document).on('ready', function() {
     for (var i = 0; i < schedule.length; i++) {
       var talk_id = schedule[i].talk_id;
       var entity_details = schedule[i];
-      var title = entity_details.title;
+      var display_title = entity_details.title;
       var description = markdownit({breaks:true}).render(tracks[talk_id].description.replace(/\\n/g,"\n"));
       var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
       var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
-      var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
       var current_day_track = schedule[i].track;
 
       var each_row = [time_duration, display_title, speaker_name, description, talk_id];
