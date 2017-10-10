@@ -5368,11 +5368,14 @@ body.tg-comingsoonpage .tg-foorterbar .tg-socialicons{padding:0;}
   position:absolute;
   text-shadow:none;
 }
-.tg-alertcontent .tg-btn{float:right;}
+.tg-alertcontent .tg-btn {
+  float:right;
+}
 
 .hr-statistics{
   color: white;
 }
 
-.tg-description{ display: none}
-
+.tg-talk-description {
+  display: none
+}

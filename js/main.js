@@ -320,7 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      //url: "./data/api/schedule.json", //use this for testing
+      // url: "./data/api/schedule.json", //use this for testing
       url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
@@ -329,7 +329,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      //url: "./data/api/tracks.json", // use this for testing
+      // url: "./data/api/tracks.json", // use this for testing
       url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
@@ -465,7 +465,7 @@ jQuery(document).on('ready', function() {
                               <h2>` + nrow[1] + `</h2>
                             </div>
                             
-                            <div class="tg-description" id='desc` + nrow[4] + `'>
+                            <div class="tg-talk-description" id='desc` + nrow[4] + `'>
                              ` + nrow[3] + `
                              
                             </div> 
@@ -496,13 +496,12 @@ jQuery(document).on('ready', function() {
 
   updateSchedule();
 
+  /*---------------------------------------
+  TALK DESCRIPTION TOGGLE SECTION
+  ---------------------------------------*/
+  function addToggleDescriptionListener() {
+    $('.tg-contentbox').unbind('click').on("click", function (event) {
+      $(this).find('.tg-talk-description').slideToggle();
+    });
+  }
 });
-
-/*---------------------------------------
-TALK DESCRIPTION TOGGLE SECTION
----------------------------------------*/
-function addToggleDescriptionListener() {
-  $('.tg-contentbox').on("click", function (event) {
-    $(this).find('.tg-description').slideToggle();
-  });
-}
