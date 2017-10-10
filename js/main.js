@@ -465,7 +465,7 @@ jQuery(document).on('ready', function() {
                               <h2>` + nrow[1] + `</h2>
                             </div>
                             
-                            <div class="tg-description" id='desc` + nrow[4] + `'>
+                            <div class="tg-talk-description" id='desc` + nrow[4] + `'>
                              ` + nrow[3] + `
                              
                             </div> 
@@ -503,6 +503,6 @@ TALK DESCRIPTION TOGGLE SECTION
 ---------------------------------------*/
 function addToggleDescriptionListener() {
   $('.tg-contentbox').on("click", function (event) {
-    $(this).find('.tg-description').slideToggle();
+    $(this).find('.tg-talk-description').slideToggle();
   });
 }
