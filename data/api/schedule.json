@@ -12,7 +12,7 @@
         },
         {
           "talk_id": "01",
-          "title": "Deep Learning for NLP from Scratch",
+          "title": "Effectively Debugging Deep Neural Networks",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -32,15 +32,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "05",
+          "title": "Python for Data Analysis",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "4"
         },
         {
-          "talk_id": "05",
-          "title": "Python for Data Analysis",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "5"
@@ -54,7 +54,7 @@
         },
         {
           "talk_id": "07",
-          "title": "Topic Modeling With Python",
+          "title": "Making Machine Learning Fruitful and Fun using Orange",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "1"
@@ -74,15 +74,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "10",
+          "title": "Kubernetes 101",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "4"
         },
         {
-          "talk_id": "10",
-          "title": "Kubernetes 101",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "5"
@@ -98,7 +98,7 @@
         },
         {
           "talk_id": "11",
-          "title": "Effectively Debugging Deep Neural Networks",
+          "title": "Introduction to Bokeh",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -118,15 +118,15 @@
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "14",
+          "title": "Pyspark - Big Data applications using Python and Spark",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "4"
         },
         {
-          "talk_id": "14",
-          "title": "Pyspark - Big Data applications using Python and Spark",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "5"
@@ -154,21 +154,21 @@
         },
         {
           "talk_id": "17",
-          "title": "Creation of Telegram bots with Python",
+          "title": "Deep Learning for NLP from Scratch",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "3"
         },
         {
-          "talk_id": "04",
-          "title": "Dev Sprints",
+          "talk_id": "18",
+          "title": "Applying Transfer Learning on Your Data",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "4"
         },
         {
-          "talk_id": "18",
-          "title": "Applying Transfer Learning on Your Data",
+          "talk_id": "04",
+          "title": "Dev Sprints",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "5"
@@ -289,7 +289,7 @@
         },
         {
           "talk_id": "33",
-          "title": "Empowering African students with Python",
+          "title": "Creating Cross Connectivity for Scalability - Hybrid Apps",
           "start_time": "14:45",
           "end_time": "15:30",
           "track": "2"
@@ -310,14 +310,14 @@
         },
         {
           "talk_id": "35",
-          "title": "How to Boost your Tensorflow model inference performance using Asyncio",
+          "title": "How to Boost your Tensorflow model inference performance using Asyncio.",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "1"
         },
         {
           "talk_id": "36",
-          "title": "A little bot for empowering teams",
+          "title": "Self-Healing Code: A Journey Thriugh Auto-Remediation",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "2"
@@ -389,7 +389,7 @@
         },
         {
           "talk_id": "43",
-          "title": "Django in the real world",
+          "title": "Spinning local DNS server sourcing responses over HTTPS to combat Man-in-the-middle attack",
           "start_time": "10:45",
           "end_time": "11:30",
           "track": "3"
@@ -466,7 +466,7 @@
         },
         {
           "talk_id": "51",
-          "title": "Scalable Big Data solutions using Lambda Architecture",
+          "title": "OLMONK : Data Validation Package",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "1"
@@ -480,13 +480,20 @@
         },
         {
           "talk_id": "53",
-          "title": "Security lessons learned from building serverless systems",
+          "title": "Clean Architecture Applications in Python",
           "start_time": "16:00",
           "end_time": "16:45",
           "track": "3"
         },
         {
           "talk_id": "54",
+          "title": "Sponsored Workshop/Talks 4",
+          "start_time": "10:45",
+          "end_time": "16:35",
+          "track":"4"
+        },
+        {
+          "talk_id": "55",
           "title": "Closing Ceremony",
           "start_time": "16:45",
           "end_time": "17:30",

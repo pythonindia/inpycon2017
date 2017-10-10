@@ -320,7 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      //url: "/data/api/schedule.json", use this for testing
+      //url: "./data/api/schedule.json", //use this for testing
       url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
@@ -329,7 +329,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      // url: "/data/api/tracks.json", // use this for testing
+      //url: "./data/api/tracks.json", // use this for testing
       url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
@@ -360,7 +360,6 @@ jQuery(document).on('ready', function() {
                    ["sixteen", "seventeen", "eighteen", "nineteen", "twenty"]];
 
   function updateSchedule() {
-    /* Uncomment these lines to make schedule work */
     updateScheduleForADay(day_1_schedule, tracks, $("#day-one .tab-content"), row_names[0]);
     updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
     updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
@@ -374,11 +373,10 @@ jQuery(document).on('ready', function() {
     for (var i = 0; i < schedule.length; i++) {
       var talk_id = schedule[i].talk_id;
       var entity_details = schedule[i];
-      var title = entity_details.title;
-      var description = tracks[talk_id].description;
+      var display_title = entity_details.title;
+      var description = markdownit({breaks:true}).render(tracks[talk_id].description.replace(/\\n/g,"\n"));
       var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
       var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
-      var display_title = speaker_name !== '' && typeof speaker_name !== 'undefined' ? title + ' by ' + speaker_name : title;
       var current_day_track = schedule[i].track;
 
       var each_row = [time_duration, display_title, speaker_name, description, talk_id];
