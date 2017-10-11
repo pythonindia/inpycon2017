@@ -386,15 +386,15 @@
 			}
 		},
 		"35": {
-			"title": "How to Boost your Tensorflow model inference performance using Asyncio.",
-			"description": "",
+			"title": "How to Boost your Tensorflow model inference performance using  Asyncio.",
+			"description": "\\n\\n#### **Description:**\\n\\nLately, there has been a lot of interest in Deep Learning(dl) and thanks to\\nframeworks like tensorflow anyone can implement dl-papers and create models.\\nBut unfortunately, the deployment patterns followed are mostly rudimentary\\nREST calls to the model or using tensorflow-serving, which is fine when you\\nare experimenting but when the model gets deployed and the requests start\\nflying, such methods will create a bottleneck in your Architecture. There are\\nobvious workarounds like running multiple model instances behind a load\\nbalancer, but what if there is a much better Pythonic way.\\n\\n**Actor and CSP patterns** have been around since the 70s(73 and 78\\nrespectively) but only a niche group has taken a keen look at them and since\\nthe introduction of asyncio from Python3.5 onwards, the Python ecosystem has\\nbeen opened up to these patterns in some _limited but useful forms_. **This\\ntalk will show these patterns and how they can be used to deploy Deep Learning\\nmodels in the right way** , ( _the reference to Deep Learning alone has been\\nintentional and relates to the[batching in\\ntensorflow](https://www.tensorflow.org/serving/serving_advanced)_ ). As to the\\nquestion of the credibility of these patterns, **Actor model is used by Erlang\\nand CSP model is used by Go** , yep we can write Python3 code like these\\nlanguages.\\n\\nThis talk is not about.\\n\\n  * **Microservices** , are good but you cannot have 1000's if not tens of thousands unique Microservices created on the fly, connected uniquely for each user.(A unique pipeline per user). Also, microservices have the downside of depending on an external message passing solutions(Redis, Celery, RabbitMQ) which add to the latency. \\n  * **Deep Learning algorithms** , as there are plenty of resources for the same, we are only looking at the model deployment perspective i.e. inference time optimization.\\n\\n**The proposed method is implemented using Python alone without any external\\ndependencies including 3rd party message passing solutions making it faster\\nand lighter than microservices.**\\n\\n\\n\\n#### **Prerequisites:**\\n\\nA basic idea of asyncio coroutines and if possible streams.\\n\\n\\n\\n#### **Speaker Info:**\\n\\nI started using Python in 2014 to quickly hack together my master's thesis and\\nits been a steady relationship since then. Over the past few years, I have\\nbeen working on building scalable systems and deploying Data processing\\npipelines at scale.\\n\\nLately, I have been a part of a startup that offers Chatbot services and we\\nwere facing serious scale up issues, it was while solving these issues that I\\npicked up on the ideas for this talk. If you think of Chatbots, each\\nconversation is a unique data pipeline with each node depending on different\\nentities and topics and having its own states, these are difficult to model\\nusing prevalent graph traversal techniques in Python, thus the Actor/CSP model\\nwith asyncio.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n  * [LinkedIn](https://www.linkedin.com/in/derrick-joseph-545566a4/)\\n\\n",
 			"type": "talk",
+			"cfp": "https://in.pycon.org/cfp/2017/proposals/how-to-boost-your-tensorflow-model-inference-performance-using-asyncio~bWpnd/",
 			"speaker": {
-				"name": "",
+				"name": "Derrick Joseph",
 				"info": "",
 				"photo": ""
-			},
-			"cfp": ""
+			}
 		},
 		"36": {
 			"title": "Self-Healing Code: A Journey Through Auto-Remediation",
