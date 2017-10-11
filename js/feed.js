@@ -1,5 +1,5 @@
 $('document').ready(function(){
-    /* Change feed url to '/data/text.xml' for testing on local server */
+    /* Change feed url to '/data/test.xml' for testing on local server */
     feedUrl = '/blog/feeds/2017.atom.xml';
     $.get(feedUrl, function(data) {
       blogs = data.getElementsByTagName("entry");
