@@ -320,8 +320,8 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      // url: "./data/api/schedule.json", //use this for testing
-      url: "https://in.pycon.org/2017/data/api/schedule.json",
+      url: "./data/api/schedule.json", //use this for testing
+      //url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
       schedule = response;
@@ -329,8 +329,8 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      // url: "./data/api/tracks.json", // use this for testing
-      url: "https://in.pycon.org/2017/data/api/tracks.json",
+      url: "./data/api/tracks.json", // use this for testing
+      //url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
       tracks = response;
@@ -364,13 +364,12 @@ jQuery(document).on('ready', function() {
     updateScheduleForADay(day_2_schedule, tracks, $("#day-two .tab-content"), row_names[1]);
     updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
     updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
-    updateTrackHall(track_halls, '.track-hall');
     addToggleDescriptionListener();
   }
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
     var schedule_rows = [[], [], [], [], []];
-    for (var i = 0; i < schedule.length; i++) {
+    for (var i = 0; i < schedule.length; i++) { 
       var talk_id = schedule[i].talk_id;
       var entity_details = schedule[i];
       var display_title = entity_details.title;
@@ -389,7 +388,6 @@ jQuery(document).on('ready', function() {
         schedule_rows[4].push(each_row);
       }
       else if (current_day_track == '1') {
-
         schedule_rows[0].push(each_row);
       } else if (current_day_track == '2') {
         schedule_rows[1].push(each_row);
@@ -486,12 +484,6 @@ jQuery(document).on('ready', function() {
       row_no += 1;
       });
     $(table).append(row_html);
-  }
-
-  function updateTrackHall(track_halls, selector) {
-      track_halls.forEach(function(element, index) {
-          $($(selector)[index]).html(element);
-      });
   }
 
   updateSchedule();
