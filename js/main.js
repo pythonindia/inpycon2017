@@ -320,8 +320,7 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      url: "./data/api/schedule.json", //use this for testing
-      //url: "https://in.pycon.org/2017/data/api/schedule.json",
+      url: "./data/api/schedule.json",
       async:false,
       success: function(response) {
       schedule = response;
@@ -329,8 +328,7 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      url: "./data/api/tracks.json", // use this for testing
-      //url: "https://in.pycon.org/2017/data/api/tracks.json",
+      url: "./data/api/tracks.json",
       async:false,
       success: function(response) {
       tracks = response;
