@@ -2209,22 +2209,37 @@ li.tg-rss a{background:#ff6600;}
 	padding:15px;
 	list-style-type:none;
 }
+
+/* For medium devices and up */
 @media (min-width: 991px){
   .gold{
       margin-left: 12%;
       width: 50% !important;
   }
+  .pipal{
+    margin-left: 37%;
+  }
 }
+
+/* For small devices */
 @media (max-width: 991px){
   .gold {
       margin-left: 25%;
       width: 50% !important;
   }
+  .pipal {
+    margin-left: 35%;
+  }
 }
+
+/* For extra small device like mobiles */
 @media (max-width: 699px){
   .gold {
       margin-left: 0%;
       width: 100% !important;
+  }
+  .pipal{
+    margin-left: 25%;
   }
 }
 .tg-sponder{
