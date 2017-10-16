@@ -2209,24 +2209,51 @@ li.tg-rss a{background:#ff6600;}
 	padding:15px;
 	list-style-type:none;
 }
+
+/* For medium devices and up */
 @media (min-width: 991px){
   .gold{
       margin-left: 12%;
       width: 50% !important;
   }
+  .pipal{
+    margin-left: 37%;
+  }
 }
+
+/* For small devices */
 @media (max-width: 991px){
   .gold {
       margin-left: 25%;
       width: 50% !important;
   }
+  .pipal {
+    margin-left: 33%;
+  }
 }
+
+/* For extra small device like mobiles */
 @media (max-width: 699px){
   .gold {
       margin-left: 0%;
       width: 100% !important;
   }
+  .pipal{
+    margin-left: 33%;
+  }
 }
+@media (max-width: 568px) {
+  .pipal {
+    margin-left: 25%;
+  }
+}
+/* Updated for mobile screens */
+@media (max-width: 481px) {
+  .pipal {
+    margin-left: 0%;
+  }
+}
+
 .tg-sponder{
 	margin:0;
   width:100%;
@@ -2252,6 +2279,7 @@ li.tg-rss a{background:#ff6600;}
 .psf a img{
   max-width: 80%;
 }
+
 .tg-bgsponsor .tg-btn{
   padding:0;
   clear:both;
