@@ -2228,7 +2228,7 @@ li.tg-rss a{background:#ff6600;}
       width: 50% !important;
   }
   .pipal {
-    margin-left: 35%;
+    margin-left: 33%;
   }
 }
 
@@ -2239,9 +2239,21 @@ li.tg-rss a{background:#ff6600;}
       width: 100% !important;
   }
   .pipal{
+    margin-left: 33%;
+  }
+}
+@media (max-width: 568px) {
+  .pipal {
     margin-left: 25%;
   }
 }
+/* Updated for mobile screens */
+@media (max-width: 481px) {
+  .pipal {
+    margin-left: 0%;
+  }
+}
+
 .tg-sponder{
 	margin:0;
   width:100%;
