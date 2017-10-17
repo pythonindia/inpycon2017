@@ -320,7 +320,8 @@ jQuery(document).on('ready', function() {
     tracks = {};
 
     $.ajax({
-      url: "./data/api/schedule.json",
+      url: "./data/api/schedule.json", //use this for testing
+      //url: "https://in.pycon.org/2017/data/api/schedule.json",
       async:false,
       success: function(response) {
       schedule = response;
@@ -328,7 +329,8 @@ jQuery(document).on('ready', function() {
     });
 
     $.ajax({
-      url: "./data/api/tracks.json",
+      url: "./data/api/tracks.json", // use this for testing
+      //url: "https://in.pycon.org/2017/data/api/tracks.json",
       async:false,
       success: function(response) {
       tracks = response;
@@ -372,11 +374,13 @@ jQuery(document).on('ready', function() {
       var entity_details = schedule[i];
       var display_title = entity_details.title;
       var description = markdownit({breaks:true}).render(tracks[talk_id].description.replace(/\\n/g,"\n"));
+      var short_description = description.slice(0, description.indexOf('</p>')+4);
       var speaker_name = tracks[talk_id].hasOwnProperty('speaker') ? tracks[talk_id].speaker.name : '';
       var time_duration = entity_details.start_time + ' - ' + entity_details.end_time;
       var current_day_track = schedule[i].track;
+      var cfp_link = tracks[talk_id].hasOwnProperty('cfp') ? tracks[talk_id].cfp: '';
 
-      var each_row = [time_duration, display_title, speaker_name, description, talk_id];
+      var each_row = [time_duration, display_title, speaker_name, description, talk_id, short_description, cfp_link];
 
       if (current_day_track == 'all' || typeof current_day_track == "undefined") {
         schedule_rows[0].push(each_row);
@@ -451,6 +455,11 @@ jQuery(document).on('ready', function() {
       } else {
         $(row).each(function() {
           var nrow = $(this);
+          var description = ''
+          if(nrow[5]){
+              description = ` <span class="short-description">` + nrow[5] + `</span>
+                                <span id="12" class="more" style="cursor: pointer" ><a href="` + nrow[6] + `">...read full description</a></span>`
+          }
           row_html += `<div class="tg-event">
                         <div class="tg-eventspeaker">
                           <div class="tg-contentbox">
@@ -462,8 +471,7 @@ jQuery(document).on('ready', function() {
                             </div>
                             
                             <div class="tg-talk-description" id='desc` + nrow[4] + `'>
-                             ` + nrow[3] + `
-                             
+                                `+ description +`   
                             </div> 
                             </div>
                             <!--<div class="tg-rightarea">
@@ -494,4 +502,6 @@ jQuery(document).on('ready', function() {
       $(this).find('.tg-talk-description').slideToggle();
     });
   }
+
+
 });
