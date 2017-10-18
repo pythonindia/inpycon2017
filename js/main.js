@@ -501,16 +501,23 @@ jQuery(document).on('ready', function() {
       $(this).find('.tg-talk-description').slideToggle();
     });
   }
-  showSchedule(prevday,prevhall);
+  showSchedule(prevday,prevhall,'Seminar Hall 1');
 });
 
-var prevday = $('.btn-day-one');
-var prevhall = $('#hall-one:nth-child(n)');
-function showSchedule(day, hall) {
+var prevday = '.btn-day-one';
+var prevhall = '#hall-one:nth-child(n)';
+function showSchedule(day, hall, hallName) {
+    // To remove previous day & hall.
     $(prevday).removeClass('active');
     $(prevhall).removeClass('active');
     $(day).addClass('active');
     $(hall).addClass('active');
+
+    //To show the hall name.
+    $(day).find(".selected-hall").html(hallName);
+
+    // To enable removing of current day & hall when user selects different schedule.
     prevday = day;
     prevhall = hall;
+
 }
