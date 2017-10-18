@@ -40,7 +40,7 @@
 		font-size: 40px;
 		line-height: 35px;
 	}
-	
+
 	.tg-tagsshare .tg-tags{
 		width:100%;
 		padding:0 0 20px;
@@ -878,6 +878,12 @@
 	.tg-leftarea time {
 		font-size: 13px;
 		line-height: 14px;
+	}
+	.hidden-xs-down {
+		display: none;
+	}
+	.hidden-xs-up {
+		display: block;
 	}
 }
 @media (max-width:480px){

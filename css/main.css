@@ -148,6 +148,11 @@ input:focus,
   border-color: #000;
   box-shadow:none !important;
 }
+.caret{
+    display: inline-block!important;
+    margin-bottom: 10px!important;
+    margin-left: 10px!important;
+}
 /*======================
      Select
 ======================*/
@@ -1919,6 +1924,9 @@ li.tg-rss a{background:#ff6600;}
   height: 0;
   border-bottom: 22px solid red;
   border-left: 20px solid transparent !important;
+}
+.hidden-xs-up {
+    display: none;
 }
 /*==============================================
       Testimonial Style
