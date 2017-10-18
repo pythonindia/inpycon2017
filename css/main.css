@@ -957,6 +957,10 @@ li.tg-rss a{background:#ff6600;}
   float:left;
   text-align:center;
 }
+.selected-hall {
+    color: #00aad4!important;
+    padding: 15px!important;
+}
 /*==============================================
       Header
 ==============================================*/
