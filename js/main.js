@@ -505,7 +505,7 @@ jQuery(document).on('ready', function() {
 });
 
 var prevday = '.btn-day-one';
-var prevhall = '#hall-one:nth-child(n)';
+var prevhall = '.btn-hall-one';
 function showSchedule(day, hall, hallName) {
     // To remove previous day & hall.
     $(prevday).removeClass('active');
