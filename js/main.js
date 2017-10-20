@@ -369,7 +369,7 @@ jQuery(document).on('ready', function() {
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
     var schedule_rows = [[], [], [], [], []];
-    for (var i = 0; i < schedule.length; i++) { 
+    for (var i = 0; i < schedule.length; i++) {
       var talk_id = schedule[i].talk_id;
       var entity_details = schedule[i];
       var display_title = entity_details.title;
@@ -469,10 +469,10 @@ jQuery(document).on('ready', function() {
                               <div class="tg-title talk_id "  data-id='talk` + nrow[4] + `' >
                               <h2>` + nrow[1] + `</h2>
                             </div>
-                            
+
                             <div class="tg-talk-description" id='desc` + nrow[4] + `'>
-                                `+ description +`   
-                            </div> 
+                                `+ description +`
+                            </div>
                             </div>
                             <!--<div class="tg-rightarea">
                               <a class="tg-btnfarword" href="#"><i class="fa fa-mail-forward"></i></a>
@@ -493,7 +493,6 @@ jQuery(document).on('ready', function() {
   }
 
   updateSchedule();
-
   /*---------------------------------------
   TALK DESCRIPTION TOGGLE SECTION
   ---------------------------------------*/
@@ -502,6 +501,23 @@ jQuery(document).on('ready', function() {
       $(this).find('.tg-talk-description').slideToggle();
     });
   }
-
-
+  showSchedule(prevday,prevhall,'Seminar Hall 1');
 });
+
+var prevday = '.btn-day-one';
+var prevhall = '.btn-hall-one';
+function showSchedule(day, hall, hallName) {
+    // To remove previous day & hall.
+    $(prevday).removeClass('active');
+    $(prevhall).removeClass('active');
+    $(day).addClass('active');
+    $(hall).addClass('active');
+
+    //To show the hall name.
+    $(day).find(".selected-hall").html(hallName);
+
+    // To enable removing of current day & hall when user selects different schedule.
+    prevday = day;
+    prevhall = hall;
+
+}
