@@ -491,7 +491,6 @@ jQuery(document).on('ready', function() {
       });
     $(table).append(row_html);
   }
-
   updateSchedule();
   /*---------------------------------------
   TALK DESCRIPTION TOGGLE SECTION
@@ -501,18 +500,50 @@ jQuery(document).on('ready', function() {
       $(this).find('.tg-talk-description').slideToggle();
     });
   }
+  updateScheduleNode();
   showSchedule(prevday,prevhall,'Seminar Hall 1');
 });
 
 var prevday = '.btn-day-one';
 var prevhall = '.btn-hall-one';
+
+function updateScheduleNode(){
+        $('.btn-day-one').addClass('active');
+        $('.btn-day-two').addClass('active');
+        $('.btn-day-three').addClass('active');
+        $('.btn-day-four').addClass('active');
+        $('#hall-one:nth-child(n)').addClass('btn-hall-one');
+        $('#hall-two:nth-child(n)').addClass('btn-hall-two');
+        $('#hall-three:nth-child(n)').addClass('btn-hall-three');
+        $('#hall-four:nth-child(n)').addClass('btn-hall-four');
+        $('#hall-five:nth-child(n)').addClass('btn-hall-five');
+        $('#hall-six:nth-child(n)').addClass('btn-hall-six');
+        $('#hall-seven:nth-child(n)').addClass('btn-hall-seven');
+        $('#hall-eight:nth-child(n)').addClass('btn-hall-eight');
+        $('#hall-nine:nth-child(n)').addClass('btn-hall-nine');
+        $('#hall-ten:nth-child(n)').addClass('btn-hall-ten');
+        $('#hall-eleven:nth-child(n)').addClass('btn-hall-eleven');
+        $('#hall-twelve:nth-child(n)').addClass('btn-hall-twelve');
+        $('#hall-thirteen:nth-child(n)').addClass('btn-hall-thirteen');
+        $('#hall-fourteen:nth-child(n)').addClass('btn-hall-fourteen');
+        $('#hall-fifteen:nth-child(n)').addClass('btn-hall-fifteen');
+        $('#hall-sixteen:nth-child(n)').addClass('btn-hall-sixteen');
+        $('#hall-seventeen:nth-child(n)').addClass('btn-hall-seventeen');
+        $('#hall-eighteen:nth-child(n)').addClass('btn-hall-eighteen');
+        $('#hall-nineteen:nth-child(n)').addClass('btn-hall-nineteen');
+        $('#hall-twenty:nth-child(n)').addClass('btn-hall-twenty');
+        $('.btn-day-one').removeClass('active');
+        $('.btn-day-two').removeClass('active');
+        $('.btn-day-three').removeClass('active');
+        $('.btn-day-four').removeClass('active');
+        $('.tg-eventvenuecontent:nth-child(n)').find(".active").removeClass('active');
+}
 function showSchedule(day, hall, hallName) {
     // To remove previous day & hall.
     $(prevday).removeClass('active');
     $(prevhall).removeClass('active');
     $(day).addClass('active');
     $(hall).addClass('active');
-
     //To show the hall name.
     $(day).find(".selected-hall").html(hallName);
 
