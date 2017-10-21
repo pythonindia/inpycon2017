@@ -203,7 +203,7 @@
         <div id="tg-statisticscounters" class="tg-statisticscounters">
           <div class="tg-counterholder">
             <div class="tg-counter">
-              <h2><span data-from="1" data-to="25" data-speed="2000" data-refresh-interval="50">25</span></h2>
+              <h2><span data-from="1" data-to="54" data-speed="2000" data-refresh-interval="50">54</span></h2>
               <h3>Speakers</h3>
               <span class="tg-statisticicon"><i class="fa fa-users" aria-hidden="true"></i></span>
             </div>
@@ -217,14 +217,14 @@
           </div>
           <div class="tg-counterholder">
             <div class="tg-counter">
-              <h2><span data-from="0" data-to="09" data-speed="2000" data-refresh-interval="50">09</span></h2>
+              <h2><span data-from="0" data-to="16" data-speed="2000" data-refresh-interval="50">16</span></h2>
               <h3>Workshops</h3>
               <span class="tg-statisticicon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
             </div>
           </div>
           <div class="tg-counterholder">
             <div class="tg-counter">
-              <h2><span data-from="0" data-to="15" data-speed="2000" data-refresh-interval="50">15</span></h2>
+              <h2><span data-from="0" data-to="38" data-speed="2000" data-refresh-interval="50">38</span></h2>
               <h3>Talks</h3>
               <span class="tg-statisticicon"><i class="fa fa-microphone" aria-hidden="true"></i></span>
             </div>
@@ -411,7 +411,8 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Display Schedule for devices with width > 568px -->
+      <div class="hidden-xs-down col-sm-12 col-md-12 col-lg-12">
         <div class="tg-eventscheduletabs">
           <ul class="tg-eventschedulenav" role="tablist">
             <li role="presentation"><a href="#day-one" aria-controls="day-one" role="tab" data-toggle="tab">Day 01<span>November 2, 2017</span></a></li>
@@ -434,8 +435,8 @@
                   <li role="presentation"><a href="#hall-four" aria-controls="hall-four" role="tab" data-toggle="tab">Seminar Hall 4</a></li>
                   <li role="presentation"><a href="#hall-five" aria-controls="hall-five" role="tab" data-toggle="tab">Class Room</a></li>
                 </ul>
-                <div class="tg-eventvenuecontent tab-content"></div> 
-              </div>  
+                <div class="tg-eventvenuecontent tab-content"></div>
+              </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="day-two">
               <div class="tg-eventschaduletime">
@@ -488,6 +489,92 @@
           </div>
         </div>
       </div>
+      <!-- Display Schedule for devices with width < 568px -->
+      <div class="hidden-xs-up col-xs-12">
+        <ul class="nav nav-tabs tg-eventschedulenav" role="tablist">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" aria-controls="day-one" role="dropdown" data-toggle="dropdown" href="#">Day 01<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-one','.btn-hall-one','Seminar Hall 1')" aria-controls="hall-one">Seminar Hall 1</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-one','.btn-hall-two','Seminar Hall 2')" aria-controls="hall-two">Seminar Hall 2</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-one','.btn-hall-three','Seminar Hall 3')" aria-controls="hall-three">Seminar Hall 3</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-one','.btn-hall-four','Seminar Hall 4')" aria-controls="hall-four">Seminar Hall 4</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-one','.btn-hall-five','Class Room')" aria-controls="hall-five">Class Room</a></li>
+                </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" aria-controls="day-two" role="dropdown" data-toggle="dropdown" href="#">Day 02<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-two','.btn-hall-six','Seminar Hall 1')" aria-controls="hall-six">Seminar Hall 1</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-two','.btn-hall-seven','Seminar Hall 2')" aria-controls="hall-seven">Seminar Hall 2</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-two','.btn-hall-eight','Seminar Hall 3')" aria-controls="hall-eight">Seminar Hall 3</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-two','.btn-hall-nine','Seminar Hall 4')" aria-controls="hall-nine">Seminar Hall 4</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-two','.btn-hall-ten','Class Room')" aria-controls="hall-ten">Class Room</a></li>
+                </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" aria-controls="day-three" role="dropdown" data-toggle="dropdown" href="#">Day 03<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-three','.btn-hall-eleven','Main Auditorium')" aria-controls="hall-eleven">Main Auditorium</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-three','.btn-hall-twelve','Seminar Hall 1')" aria-controls="hall-twelve">Seminar Hall 1</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-three','.btn-hall-thirteen','Seminar Hall 2')" aria-controls="hall-thirteen">Seminar Hall 2</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-three','.btn-hall-fourteen','Seminar Hall 3')" aria-controls="hall-fourteen">Seminar Hall 3</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-three','.btn-hall-fifteen','Class Room')" aria-controls="hall-fifteen">Class Room</a></li>
+                </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" aria-controls="day-four" role="dropdown" data-toggle="dropdown" href="#">Day 04<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-four','.btn-hall-sixteen','Main Auditorium')" aria-controls="hall-sixteen">Main Auditorium</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-four','.btn-hall-seventeen','Seminar Hall 1')" aria-controls="hall-seventeen">Seminar Hall 1</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-four','.btn-hall-eighteen','Seminar Hall 2')" aria-controls="hall-eighteen">Seminar Hall 2</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-four','.btn-hall-nineteen','Seminar Hall 3')" aria-controls="hall-nineteen">Seminar Hall 3</a></li>
+                        <li role="presentation"><a  onclick="showSchedule('.btn-day-four','.btn-hall-twenty','Class Room')" aria-controls="hall-twenty">Class Room</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="tg-eventschedulecontent tab-content">
+            <div class="tab-pane btn-day-one" id="day-one">
+                <div class="tg-eventschaduletime">
+                  <h2>Day 01 - Workshop and Dev Sprint</h2>
+                  <h3>November 2, 2017</h3>
+                  <h3 class='selected-hall'></h3> <!--send via main.js/showSchedule()-->
+                </div>
+                <div class="tg-eventvenuetabs">
+                    <div class="tg-eventvenuecontent tab-content"></div>
+                </div>
+            </div>
+            <div class="tab-pane btn-day-two" id="day-two">
+                <div class="tg-eventschaduletime">
+                    <h2>Day 02 - Workshop and Dev Sprint</h2>
+                    <h3>November 3, 2017</h3>
+                    <h3 class='selected-hall'></h3> <!--send via main.js/showSchedule()-->
+                </div>
+                <div class="tg-eventvenuetabs">
+                    <div class="tg-eventvenuecontent tab-content"></div>
+                </div>
+            </div>
+            <div class="tab-pane btn-day-three" id="day-three">
+                <div class="tg-eventschaduletime">
+                    <h2>Day 03 - Conference</h2>
+                    <h3>November 4, 2017</h3>
+                    <h3 class='selected-hall'></h3> <!--send via main.js/showSchedule()-->
+                </div>
+                <div class="tg-eventvenuetabs">
+                    <div class="tg-eventvenuecontent tab-content"></div>
+                </div>
+            </div>
+            <div class="tab-pane btn-day-four" id="day-four">
+                <div class="tg-eventschaduletime">
+                    <h2>Day 04 - Conference</h2>
+                    <h3>November 5, 2017</h3>
+                    <h3 class='selected-hall'></h3> <!--send via main.js/showSchedule()-->
+                </div>
+                <div class="tg-eventvenuetabs">
+                    <div class="tg-eventvenuecontent tab-content"></div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </section>
