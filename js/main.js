@@ -444,7 +444,7 @@ jQuery(document).on('ready', function() {
             <div class="tg-leftarea">
               <time datetime="2017-12-12">09:30 - 17:30</time>
               <div class="tg-title">
-                <h2>Child Care</h2>
+                <h2>Open Spaces</h2>
               </div>
             </div>
             <!--<div class="tg-rightarea">
