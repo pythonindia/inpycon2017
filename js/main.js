@@ -365,6 +365,8 @@ jQuery(document).on('ready', function() {
     updateScheduleForADay(day_3_schedule, tracks, $("#day-three .tab-content"), row_names[2]);
     updateScheduleForADay(day_4_schedule, tracks, $("#day-four .tab-content"), row_names[3]);
     addToggleDescriptionListener();
+    if(document.body.clientWidth < 665)
+        $('.tg-eventvenuecontent:nth-child(n)').find(".active").removeClass('active');
   }
 
   function updateScheduleForADay(schedule, tracks, table_body, row_names) {
@@ -409,7 +411,10 @@ jQuery(document).on('ready', function() {
     var row_no = 0;
     $(rows).each(function() {
       var row = $(this);
-      row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane" id="hall-'+ row_names[row_no] +'">';
+      if(document.body.clientWidth < 665)
+        row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane btn-hall-'+ row_names[row_no] +' active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane btn-hall-'+ row_names[row_no] +' " id="hall-'+ row_names[row_no] +'">';
+      else
+        row_html += (row_no == 0)? '<div role="tabpanel" class="tab-pane active" id="hall-'+ row_names[row_no] +'">':  '<div role="tabpanel" class="tab-pane" id="hall-'+ row_names[row_no] +'">';
       if (row_names[row_no] == "fifteen" || row_names[row_no] == "twenty") {
         row_html += `
       <div class="tg-event">
@@ -439,7 +444,7 @@ jQuery(document).on('ready', function() {
             <div class="tg-leftarea">
               <time datetime="2017-12-12">09:30 - 17:30</time>
               <div class="tg-title">
-                <h2>Child Care</h2>
+                <h2>Open Spaces</h2>
               </div>
             </div>
             <!--<div class="tg-rightarea">
@@ -500,45 +505,12 @@ jQuery(document).on('ready', function() {
       $(this).find('.tg-talk-description').slideToggle();
     });
   }
-  if(document.body.clientWidth < 665)
-    updateScheduleNode();
   showSchedule(prevday,prevhall,'Seminar Hall 1');
 });
 
 var prevday = '.btn-day-one';
 var prevhall = '.btn-hall-one';
 
-function updateScheduleNode(){
-        $('.btn-day-one').addClass('active');
-        $('.btn-day-two').addClass('active');
-        $('.btn-day-three').addClass('active');
-        $('.btn-day-four').addClass('active');
-        $('#hall-one:nth-child(n)').addClass('btn-hall-one');
-        $('#hall-two:nth-child(n)').addClass('btn-hall-two');
-        $('#hall-three:nth-child(n)').addClass('btn-hall-three');
-        $('#hall-four:nth-child(n)').addClass('btn-hall-four');
-        $('#hall-five:nth-child(n)').addClass('btn-hall-five');
-        $('#hall-six:nth-child(n)').addClass('btn-hall-six');
-        $('#hall-seven:nth-child(n)').addClass('btn-hall-seven');
-        $('#hall-eight:nth-child(n)').addClass('btn-hall-eight');
-        $('#hall-nine:nth-child(n)').addClass('btn-hall-nine');
-        $('#hall-ten:nth-child(n)').addClass('btn-hall-ten');
-        $('#hall-eleven:nth-child(n)').addClass('btn-hall-eleven');
-        $('#hall-twelve:nth-child(n)').addClass('btn-hall-twelve');
-        $('#hall-thirteen:nth-child(n)').addClass('btn-hall-thirteen');
-        $('#hall-fourteen:nth-child(n)').addClass('btn-hall-fourteen');
-        $('#hall-fifteen:nth-child(n)').addClass('btn-hall-fifteen');
-        $('#hall-sixteen:nth-child(n)').addClass('btn-hall-sixteen');
-        $('#hall-seventeen:nth-child(n)').addClass('btn-hall-seventeen');
-        $('#hall-eighteen:nth-child(n)').addClass('btn-hall-eighteen');
-        $('#hall-nineteen:nth-child(n)').addClass('btn-hall-nineteen');
-        $('#hall-twenty:nth-child(n)').addClass('btn-hall-twenty');
-        $('.btn-day-one').removeClass('active');
-        $('.btn-day-two').removeClass('active');
-        $('.btn-day-three').removeClass('active');
-        $('.btn-day-four').removeClass('active');
-        $('.tg-eventvenuecontent:nth-child(n)').find(".active").removeClass('active');
-}
 function showSchedule(day, hall, hallName) {
     // To remove previous day & hall.
     $(prevday).removeClass('active');
