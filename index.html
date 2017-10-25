@@ -689,6 +689,34 @@
 *************************************-->
 
 <!--************************************
+  Sponsor Modal Popup - Tensorflow
+*************************************-->
+<div class="modal fade" id="tensorflow-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myModalLabel">TensorFlow</h4>
+          </div>
+          <div class="modal-body">
+              <center><img class="img-responsive" width="300" height="300" style="margin:10px" src="images/sponsor/tensor_flow.jpg"></center>
+              <div class="sponsors-description"><p>TensorFlow is an open source software library for numerical computation using data flow graphs. TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well.</p></div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" href="https://www.tensorflow.org/" target="_blank">
+                Visit TensorFlow's website &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--************************************
+  Sponsor Popup End - Tensorflow
+*************************************-->
+
+<!--************************************
   Sponsor Modal Popup - Visible Alpha
 *************************************-->
 <div class="modal fade" id="visible-alpha-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
@@ -703,7 +731,7 @@
               <div class="sponsors-description"><p>Visible Alpha is transforming the way Wall Street firms collaborate on research, financial models and other services. The company combines advanced data correction methodologies, a secure distribution network and sophisticated analytical tools on the front end to drive efficiencies and transparency into the research process and help firms generate alpha in new and differentiated ways.</p></div>
           </div>
           <div class="modal-footer">
-              <a class="btn btn-primary" href="http://visiblealpha.com/" target="_blank">
+              <a class="btn btn-primary" href="http://www.visiblealpha.com/" target="_blank">
                 Visit Visible Alpha's website &nbsp;<i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -886,7 +914,7 @@
       <ul class="tg-sponsors col-md-4">
         <li class="platinum">
           <figure class="tg-sponder">
-            <a href="https://www.tensorflow.org/" target="_blank">
+            <a data-toggle="modal" href="#tensorflow-modal" target="_blank" href="https://www.tensorflow.org/">
               <img src="images/sponsor/tensor_flow.jpg" alt="TensorFlow">
             </a>
           </figure>
