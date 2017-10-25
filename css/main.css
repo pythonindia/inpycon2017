@@ -2243,6 +2243,10 @@ li.tg-rss a{background:#ff6600;}
       margin-left: 25%;
       width: 50% !important;
   }
+  .platinum {
+      margin-left: 25%;
+      width: 50% !important;
+  }
   .pipal {
     margin-left: 33%;
   }
@@ -2251,6 +2255,10 @@ li.tg-rss a{background:#ff6600;}
 /* For extra small device like mobiles */
 @media (max-width: 699px){
   .gold {
+      margin-left: 0%;
+      width: 100% !important;
+  }
+  .platinum {
       margin-left: 0%;
       width: 100% !important;
   }
