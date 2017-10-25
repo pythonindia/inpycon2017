@@ -2224,11 +2224,15 @@ li.tg-rss a{background:#ff6600;}
 
 /* For medium devices and up */
 @media (min-width: 991px){
-  .gold{
+  .gold {
       margin-left: 12%;
       width: 50% !important;
   }
-  .pipal{
+  .platinum {
+      margin-left: 12%;
+      width: 50% !important;
+  }
+  .pipal {
     margin-left: 37%;
   }
 }
