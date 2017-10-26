@@ -97,8 +97,8 @@
           "track": "all"
         },
         {
-          "talk_id": "11",
-          "title": "Introduction to Bokeh",
+          "talk_id": "15",
+          "title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -139,8 +139,8 @@
           "track": "all"
         },
         {
-          "talk_id": "15",
-          "title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
+          "talk_id": "11",
+          "title": "Introduction to Bokeh",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "1"
@@ -211,13 +211,6 @@
           "track": "1"
         },
         {
-          "talk_id": "23",
-          "title": "Deploying Production ready Kubernetes clusters - Lessons Learnt",
-          "start_time": "10:45",
-          "end_time": "11:30",
-          "track": "2"
-        },
-        {
           "talk_id": "24",
           "title": "HTTP Bottom Up - Live!",
           "start_time": "10:45",
@@ -226,7 +219,7 @@
         },
         {
           "talk_id": "25",
-          "title": "Sponsored Workshop/Talks 1",
+          "title": "Making Of NextGen Fintech: Insights From Visible Alpha Tech Stack (Sponsored Talk)",
           "start_time": "10:45",
           "end_time": "13:00",
           "track": "4"

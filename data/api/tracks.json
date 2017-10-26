@@ -254,12 +254,12 @@
 			}
 		},
 		"23": {
-			"title": "Deploying Production ready Kubernetes clusters -Lessons Learnt",
-			"description": "\\n\\n#### **Description:**\\n\\nKubernetes is a proven standard as a Production grade container orchestration\\ntool as almost 71% companies in containers world use it as container\\norchestration tool. Planning to use Kubernetes in production for cloud-native\\napps ? Concerned about how to integrate a Kubernetes cluster into your\\nexisting infrastructure!! This talk will brief you through some of the common\\nchallenges when deploying Kubernetes cluster on Public cloud like AWS and how\\nto address those challenges.\\n\\nWe will show on how to provision and deploy production ready kubernetes\\ncluster using tools like Kops. Some of the points I will try to cover:-\\n\\n  * Highly available kubernetes cluster, deploying multi master cluster in different data center regions. \\n  * Auto-scaling up and down kubernetes cluster. \\n  * Private networking (Calico/Weave/Flannel etc).\\n  * Monitoring kubernetes cluster using Prometheus\\n  * Backup and restore of Kubernetes Cluster. \\n  * Resource management. \\n  * Security policies. \\n  * User management.\\n\\nApplication deployment considerations on kubernetes clusters:-\\n\\n  * Zero down time deployments.\\n  * Auto-scaling applications using Horizontal Pod auto-scaler and Memory based auto-scaler.\\n  * Deploying apps in different Name-spaces.\\n  * Effectively using Persistent volume and stateful sets.\\n  * When to use jobs and scheduled jobs.\\n  * Logging and Monitoring of applications.\\n\\nAt the end of the talk attendees will be able to understand on how to deploy\\nkubernetes production ready cluster, And best practices to deploy apps on\\nKubernetes.\\n\\n\\n\\n#### **Speaker Info:**\\n\\nA Open-Source Enthusiast, Currently working as Senior DevOps Engineer at\\nBigBinary. Strong believer of Infrastructure-as-a-code principal. Proficient\\nin automating stuffs using Chef, Ansible, Terraform, Cloud-Formation and\\nusually uses Scripting languages like Bash, Ruby and Python. Recently working\\nmostly on Containers and orchestration of containers in the Cloud environments\\nand proficient in implementing Kubernetes Clusters.\\n\\n\\n\\n#### **Speaker Links:**\\n\\n[Linkedin](https://in.linkedin.com/in/slashrahul)\\n\\n[Work](https://www.bigbinary.com/team/rahulmahale)\\n\\n[Github](https://github.com/RahulMahale)\\n\\n[Twitter](http://twitter.com/Rahul_Mahale)\\n\\n",
+			"title": "",
+			"description": "",
 			"type": "talk",
-			"cfp": "https://in.pycon.org/cfp/2017/proposals/deploying-production-ready-kubernetes-clusters-lessons-learnt~aAApa/",
+			"cfp": "",
 			"speaker": {
-				"name": "Rahul Mahale",
+				"name": "",
 				"info": "",
 				"photo": ""
 			}
@@ -276,11 +276,11 @@
 			}
 		},
 		"25": {
-			"title": "Sponsored Workshop/Talks 1",
+			"title": "Making Of NextGen Fintech: Insights From Visible Alpha Tech Stack (Sponsored Talk)",
 			"description": "",
 			"type": "talk",
 			"speaker": {
-				"name": "",
+				"name": "Visible Alpha",
 				"info": "",
 				"photo": ""
 			},
