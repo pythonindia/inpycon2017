@@ -211,13 +211,6 @@
           "track": "1"
         },
         {
-          "talk_id": "23",
-          "title": "Deploying Production ready Kubernetes clusters - Lessons Learnt",
-          "start_time": "10:45",
-          "end_time": "11:30",
-          "track": "2"
-        },
-        {
           "talk_id": "24",
           "title": "HTTP Bottom Up - Live!",
           "start_time": "10:45",
@@ -226,7 +219,7 @@
         },
         {
           "talk_id": "25",
-          "title": "Sponsored Workshop/Talks 1",
+          "title": "Making Of NextGen Fintech: Insights From Visible Alpha Tech Stack (Sponsored Talk)",
           "start_time": "10:45",
           "end_time": "13:00",
           "track": "4"
