@@ -97,8 +97,8 @@
           "track": "all"
         },
         {
-          "talk_id": "11",
-          "title": "Introduction to Bokeh",
+          "talk_id": "15",
+          "title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
           "start_time": "10:00",
           "end_time": "13:00",
           "track": "1"
@@ -139,8 +139,8 @@
           "track": "all"
         },
         {
-          "talk_id": "15",
-          "title": "Deep Learning with Tensorflow : Techniques for achieving optimal model performance",
+          "talk_id": "11",
+          "title": "Introduction to Bokeh",
           "start_time": "14:00",
           "end_time": "17:00",
           "track": "1"
