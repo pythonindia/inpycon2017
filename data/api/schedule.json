@@ -324,10 +324,10 @@
         },
         {
           "talk_id": "38",
-          "title": "Keynote 2",
+          "title": "Keynote by Elizabeth Ferrao",
           "start_time": "16:45",
           "end_time": "17:30",
-          "track": "3"
+          "track": "all"
         }
       ],
       "2017-10-05": [
@@ -340,7 +340,7 @@
         },
         {
           "talk_id": "39",
-          "title": "Keynote 3",
+          "title": "Keynote by Peter Wang",
           "start_time": "09:30",
           "end_time": "10:15",
           "track": "all"
