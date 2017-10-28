@@ -20,4 +20,4 @@ Commit both the rendered html and the file inside `/templates/`
 ## Contributing
 
 - Send Pull-request against `master` branch.
-- Once you pull-request is merged is will be automatically go live at https://pythonindia.github.io/inpycon2017/
+- Once you pull-request is merged it will be automatically go live at https://pythonindia.github.io/inpycon2017/
