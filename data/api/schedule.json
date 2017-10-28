@@ -191,7 +191,7 @@
         },
         {
           "talk_id": "20",
-          "title": "Child Care",
+          "title": "Open Spaces",
           "start_time": "09:30",
           "end_time": "17:30",
           "track": "5"
@@ -324,7 +324,7 @@
         },
         {
           "talk_id": "38",
-          "title": "Keynote by Elizabeth Ferrao",
+          "title": "Keynote - Python Community Principles by Elizabeth Ferrao",
           "start_time": "16:45",
           "end_time": "17:30",
           "track": "all"
@@ -347,7 +347,7 @@
         },
         {
           "talk_id": "20",
-          "title": "Child Care",
+          "title": "Open Spaces",
           "start_time": "09:30",
           "end_time": "17:30",
           "track": "5"
