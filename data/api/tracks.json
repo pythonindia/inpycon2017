@@ -127,7 +127,7 @@
 			"type": "",
 			"cfp": "",
 			"speaker": {
-				"name": "",
+				"name": "Peter Wang",
 				"info": "",
 				"photo": ""
 			}
@@ -182,7 +182,7 @@
 			"type": "workshop",
 			"cfp": "https://in.pycon.org/cfp/2017/proposals/python-packages~dPr2a/",
 			"speaker": {
-				"name": "rahul .poruri",
+				"name": "Rahul Poruri",
 				"info": "",
 				"photo": ""
 			}
@@ -518,7 +518,7 @@
 			}
 		},
 		"47": {
-			"title": "Panel Discussion 2",
+			"title": "Panel Discussion on Women in Open Source",
 			"description": "",
 			"type": "talk",
 			"speaker": {
@@ -611,6 +611,17 @@
 			"type": "default",
 			"speaker": {
 				"name": "",
+				"info": "",
+				"photo": ""
+			},
+			"cfp": ""
+		},
+		"56": {
+			"title": "DevOps @ Microsoft with Python (Sponsored Talk)",
+			"description": "",
+			"type": "default",
+			"speaker": {
+				"name": "Microsoft",
 				"info": "",
 				"photo": ""
 			},
