@@ -460,8 +460,11 @@ jQuery(document).on('ready', function() {
           var nrow = $(this);
           var description = ''
           if(nrow[5]){
-              description = ` <span class="short-description">` + nrow[5] + `</span>
-                                <span id="12" class="more" style="cursor: pointer" ><a href="` + nrow[6] + `">Read Full Description</a></span>`
+              description = ` <span class="short-description">` + nrow[5] + `</span>`;
+              if(nrow[4] != "25" && nrow[4] != "56"){
+                description += `<span id="12" class="more" style="cursor: pointer" ><a href="` + nrow[6] + `">Read Full Description</a></span>`;
+              }
+                                
           }
           row_html += `<div class="tg-event">
                         <div class="tg-eventspeaker">
