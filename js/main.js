@@ -339,10 +339,10 @@ jQuery(document).on('ready', function() {
   }
 
   var talk_count = 0;
-  var DATE_ONE = "2017-10-02";
-  var DATE_TWO = "2017-10-03";
-  var DATE_THREE = "2017-10-04";
-  var DATE_FOUR = "2017-10-05";
+  var DATE_ONE = "2017-11-02";
+  var DATE_TWO = "2017-11-03";
+  var DATE_THREE = "2017-11-04";
+  var DATE_FOUR = "2017-11-05";
   var API_VERSION = "0.0.1";
   var response = getScheduleAndTracks();
   var schedule = response.schedule[API_VERSION][0];
