@@ -2,7 +2,7 @@
   "0.0.1": [
     {
       "tracks": ["Main Audi", "Seminar Main 1", "Seminar Hall 2", "Seminar Hall 3"],
-      "2017-10-02": [
+      "2017-11-02": [
         {
           "talk_id": "00",
           "title": "Registration",
@@ -81,7 +81,7 @@
           "track": "5"
         }
       ],
-      "2017-10-03": [
+      "2017-11-03": [
         {
           "talk_id": "00",
           "title": "Registration",
@@ -167,7 +167,7 @@
           "track": "5"
         }
       ],
-      "2017-10-04": [
+      "2017-11-04": [
         {
           "talk_id": "00",
           "title": "Registration",
@@ -323,7 +323,7 @@
           "track": "all"
         }
       ],
-      "2017-10-05": [
+      "2017-11-05": [
         {
           "talk_id": "00",
           "title": "Registration",
