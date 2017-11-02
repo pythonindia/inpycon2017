@@ -402,7 +402,7 @@
 			"type": "talk",
 			"cfp": "https://in.pycon.org/cfp/2017/proposals/self-healing-code-a-journey-through-auto-remediation~dw2Xb/",
 			"speaker": {
-				"name": "arusing@adobe.com",
+				"name": "Arun Singh",
 				"info": "",
 				"photo": ""
 			}
@@ -617,7 +617,7 @@
 			"cfp": ""
 		},
 		"56": {
-			"title": "DevOps @ Microsoft with Python (Sponsored Talk)",
+			"title": "From Zero to DevOps for Python using Visual Studio Team services (Sponsored Talk)",
 			"description": "In this session we are going to talk about how Microsoft embraces Python in its DevOps offering. We're going to start from scratch and before we're done we will use Visual Studio Team Services (VSTS) to setup Continuous Delivery for Python Applications on Cloud and demonstrate the DevOps strategy in action. We'll cover version control, project planning, and continuous integration / continuous delivery. By the end of this session you will know how to enable DevOps for any language targeting any platform. \\n**Key Takeaways:**\\n -Show how VSTS helps you embrace DevOps for Python Applications.\\n-Deploy Python application using containers on Cloud\\n-VSTS and DevOps for Azure\\n**Speaker:** Bishal Prasad\\n**Speaker Bio:**\\nBishal Prasad is a senior software engineer in Microsoft's VSTS Team, where he is responsible for release management and continuous deployment features of VSTS. VSTS is Microsoft’s highly extensible, reliable and cross-platform DevOps offering. Bishal has been with Microsoft for over 7 years and has played key role in integrating VSTS with cloud and open source technologies like Azure, Jenkins, Packer, Python etc.",
 			"type": "default",
 			"speaker": {
