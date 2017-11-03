@@ -171,7 +171,7 @@
 			"type": "workshop",
 			"cfp": "https://in.pycon.org/cfp/2017/proposals/deep-learning-with-tensorflow-techniques-for-achieving-optimal-model-performance~dRkYe/",
 			"speaker": {
-				"name": "sngsahil",
+				"name": "Sahil Singh",
 				"info": "",
 				"photo": ""
 			}
@@ -479,7 +479,7 @@
 			"type": "talk",
 			"cfp": "https://in.pycon.org/cfp/2017/proposals/spinning-local-dns-server-sourcing-responses-over-https-to-combat-man-in-the-middle-attack~eVnoe/",
 			"speaker": {
-				"name": " arnAV",
+				"name": "Arnav Kumar",
 				"info": "",
 				"photo": ""
 			}
@@ -567,7 +567,7 @@
 			"type": "talk",
 			"cfp": "https://in.pycon.org/cfp/2017/proposals/olmonk-data-validation-package~aO6Ee/",
 			"speaker": {
-				"name": "ankur09011",
+				"name": "ankur09",
 				"info": "",
 				"photo": ""
 			}
