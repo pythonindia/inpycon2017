@@ -1,7 +1,7 @@
 {
   "0.0.1": [
     {
-      "tracks": ["Main Audi", "Seminar Main 1", "Seminar Hall 2", "Seminar Hall 3"],
+      "tracks": ["Main Audi", "Room:654", "Room:742", "Room:723"],
       "2017-11-02": [
         {
           "talk_id": "00",
